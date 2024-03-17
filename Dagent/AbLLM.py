@@ -4,7 +4,7 @@ from random import randrange
 from typing import List
 
 
-class abllm(ABC):
+class AbLLM(ABC):
     
     def __init__():
         pass
