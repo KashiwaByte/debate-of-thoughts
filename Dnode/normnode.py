@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 r"""
 @DATE: 2024-03-18 09:57:35
-@File: Dnode\llmnode.py
+@File: Dnode\normnode.py
 @IDE: vscode
 @Description:
     基础类节点

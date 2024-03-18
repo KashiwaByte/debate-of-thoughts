@@ -9,4 +9,4 @@ r"""
 """
 
 from .initialnode import InitNode
-from .llmnode import LLMNode
+from .normnode import NormNode
