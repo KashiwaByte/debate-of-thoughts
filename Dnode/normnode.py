@@ -5,12 +5,12 @@ r"""
 @File: Dnode\llmnode.py
 @IDE: vscode
 @Description:
-    基础llm类节点
+    基础类节点
 """
 
 from .abnode import AbNode
 from Dagent import D_Openai
-class LLMNode(AbNode):
+class NormNode(AbNode):
     
     
     def __init__(self, round: int, out_node: AbNode,api,standpoint:int=-1):
