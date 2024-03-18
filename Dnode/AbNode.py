@@ -17,7 +17,7 @@ class AbNode(ABC):
     
     
     @abstractmethod
-    def get_content(self,out_node):
+    def get_content(self):
         ''' self.content = func(out_node.content) '''
        
         pass

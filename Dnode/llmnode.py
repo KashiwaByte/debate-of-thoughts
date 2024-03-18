@@ -9,15 +9,17 @@ r"""
 """
 
 from .abnode import AbNode
-
+from ..Dagent import D_Openai
 class llmnode(AbNode):
     
     def __init__(self, round: int, out_node: AbNode):
         super().__init__(round, out_node)
+        D_Openai()
         
         
+    def get_content(self):
+        D_Openai.invoke(self.target.content)
         
-    def get_content(self, out_node):
         pass
     
     

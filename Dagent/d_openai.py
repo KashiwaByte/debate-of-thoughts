@@ -15,7 +15,7 @@ from openai import OpenAI
 
 class D_Openai(AbLLM):
     
-    def __init__(self, model: str,api_key):
+    def __init__(self, api_key,model: str= "gpt-3.5-turbo"):
         super().__init__(model)
         self.client = OpenAI(api_key=api_key)
         
