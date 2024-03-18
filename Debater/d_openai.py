@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 r"""
-@DATE: 2024-03-18 08:51:15
-@File: Dagent\openaillm.py
+@DATE: 2024-03-18 21:57:01
+@File: Debater\d_openai.py
 @IDE: vscode
 @Description:
-    openai大语言模型
+     openai大语言模型
 """
-from .abllm import AbLLM
+from .abdebater import AbDebater
 
 from openai import OpenAI
 
 
 
-class D_Openai(AbLLM):
+class D_Openai(AbDebater):
     
     def __init__(self, api_key,model: str= "gpt-3.5-turbo"):
         super().__init__(model)

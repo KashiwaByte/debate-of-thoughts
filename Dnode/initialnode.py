@@ -9,14 +9,14 @@ r"""
 """
 
 from .abnode import AbNode
-from Dagent import D_Openai
+from Debater import D_Openai
 class InitNode(AbNode):
     
-    def __init__(self,topic,api):
+    def __init__(self,topic,debater):
         self.round_id = 1
         self.topic = topic
         self.depth = 0
-        self.debater=D_Openai(api_key=api)
+        self.debater=debater
         
         
     def get_content(self):

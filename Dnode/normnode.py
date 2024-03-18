@@ -9,13 +9,12 @@ r"""
 """
 
 from .abnode import AbNode
-from Dagent import D_Openai
+from Debater import D_Openai
 class NormNode(AbNode):
     
     
-    def __init__(self, round: int, out_node: AbNode,api,standpoint:int=-1):
-        super().__init__(round, out_node,standpoint)
-        self.debater=D_Openai(api_key=api)
+    def __init__(self, round: int, out_node: AbNode,debater,standpoint:int=-1):
+        super().__init__(round, out_node,standpoint,debater)
         
     
     

@@ -17,12 +17,13 @@ class AbNode(ABC):
     
     
     
-    def __init__(self,round:int,out_node:AbNode,standpoint:int):
+    def __init__(self,round:int,out_node:AbNode,standpoint:int,debater):
         self.round_id = round
         self.target = out_node
         self.standpoint = standpoint
         self.stand = self.get_stand()
         self.depth = self.get_depth()
+        self.debater=debater
         pass
         
     

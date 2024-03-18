@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 r"""
-@DATE: 2024-03-18 08:46:59
-@File: Dagent\AbLLM.py
+@DATE: 2024-03-18 21:33:45
+@File: Debater\abdebater.py
 @IDE: vscode
 @Description:
-    大模型抽象类
+    抽象debater类
 """
 from __future__ import annotations
 from abc import ABC, abstractmethod
@@ -13,7 +13,7 @@ from random import randrange
 from typing import List
 
 
-class AbLLM(ABC):
+class AbDebater(ABC):
     
     def __init__(self,model:str,):
         self.model = model
