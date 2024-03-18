@@ -9,17 +9,23 @@ r"""
 """
 
 from .abnode import AbNode
-from ..Dagent import D_Openai
-class llmnode(AbNode):
+from Dagent import D_Openai
+class InitNode(AbNode):
     
-    def __init__(self,topic):
+    def __init__(self,topic,api):
         self.round_id = 1
         self.topic = topic
-        D_Openai()
+        self.debater=D_Openai(api_key=api)
         
         
     def get_content(self):
-        answer = D_Openai.invoke(self.topic)
+        init_messages=[
+                 {"role": "system", "content": "你是一个有用的助手，请根据以下问题输出一个观点明确的回答"},
+                 {"role": "user", "content": ""},
+                    ]
+        init_messages[1]['content'] = self.topic
+        self.context = init_messages
+        answer = self.debater.invoke(init_messages)
         self.content = answer
        
     

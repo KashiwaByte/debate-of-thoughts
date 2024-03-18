@@ -8,16 +8,25 @@ class AbNode(ABC):
     
     
     
-    def __init__(self,round:int,out_node:AbNode):
+    def __init__(self,round:int,out_node:AbNode,standpoint:int):
         self.round_id = round
         self.target = out_node
+        self.standpoint = standpoint
         pass
         
-        
     
+    def get_stand(self):
+        if self.standpoint == 1:
+            self.stand = "支持"
+        elif self.standpoint == -1:
+            self.stand = "反对"
+        else: 
+            print(f'standpoint只能输入1或者-1')
+
     
     @abstractmethod
     def get_content(self):
+        '''最小闭环的get_content先做成指定使openai直接生成'''
         ''' self.content = func(out_node.content) '''
        
         pass
@@ -26,8 +35,8 @@ class AbNode(ABC):
     def get_point(self):
         pass
     
-    def get_depth(self,target):
-        self.depth = target.depth + 1
+    def get_depth(self):
+        self.depth = self.target.depth + 1
         pass
     
     
