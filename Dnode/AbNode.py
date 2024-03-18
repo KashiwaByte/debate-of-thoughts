@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+r"""
+@DATE: 2024-03-18 16:11:06
+@File: Dnode\AbNode.py
+@IDE: vscode
+@Description:
+    抽象node类
+"""
 from __future__ import annotations
 from abc import ABC, abstractmethod
 from random import randrange

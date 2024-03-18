@@ -29,7 +29,7 @@ class AbObserver(ABC):
 
     
     def new_round(self):
-        '''根据策略展开新一轮辩论'''
+        '''根据策略展开新一轮辩论,最小实现不做策略选择'''
         pass
     
     
@@ -39,15 +39,15 @@ class AbObserver(ABC):
     
     
     def get_point(self):
-        '''获取当前各节点的分数'''
+        '''获取当前各节点的分数，返回一个字典'''
         pass
     
     
     def get_influence(self):
-        '''获取当前各节点的影响力'''
+        '''获取当前各节点的影响力，返回一个字典'''
         pass
         
     def get_depth(self):
-        """获取当前各节点的深度"""
+        """获取当前各节点的深度，返回一个字典"""
     
     
