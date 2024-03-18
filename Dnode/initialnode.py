@@ -15,6 +15,7 @@ class InitNode(AbNode):
     def __init__(self,topic,api):
         self.round_id = 1
         self.topic = topic
+        self.depth = 0
         self.debater=D_Openai(api_key=api)
         
         
@@ -34,5 +35,4 @@ class InitNode(AbNode):
         return super().get_point()
 
     
-    def get_depth(self):
-        self.depth = 0
+  

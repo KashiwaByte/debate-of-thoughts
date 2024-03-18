@@ -12,6 +12,8 @@ class AbNode(ABC):
         self.round_id = round
         self.target = out_node
         self.standpoint = standpoint
+        self.stand = self.get_stand()
+        self.depth = self.get_depth()
         pass
         
     
