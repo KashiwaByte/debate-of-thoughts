@@ -68,7 +68,7 @@ class AbObserver(ABC):
             self.relation[self.round-1,self.node.target.round_id-1] = self.node.standpoint
         if self.round > 2:
             self.relation = np.pad(self.relation, pad_width=((0, 1), (0, 1)), mode='constant')
-           
+            self.relation[self.round-1,self.node.target.round_id-1] = self.node.standpoint
         else:
             pass
     
