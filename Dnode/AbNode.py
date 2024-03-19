@@ -41,7 +41,6 @@ class AbNode(ABC):
     def get_content(self):
         '''最小闭环的get_content先做成指定使openai直接生成'''
         ''' self.content = func(out_node.content) '''
-       
         pass
     
     
