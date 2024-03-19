@@ -13,8 +13,16 @@ from random import randrange
 from typing import List
 import numpy as np
 
+
+import os
 import sys
-sys.path.append('D:\debate-of-thoughts')
+# 获取当前脚本所在的目录
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# 构建相对路径
+relative_path = os.path.join(current_dir, '..')
+# 将相对路径添加到sys.path
+sys.path.append(relative_path)
+print(relative_path)
 from Dnode import AbNode,InitNode
 
 
