@@ -12,6 +12,9 @@ from abc import ABC, abstractmethod
 from random import randrange
 from typing import List
 import numpy as np
+
+import sys
+sys.path.append('D:\debate-of-thoughts')
 from Dnode import AbNode,InitNode
 
 
@@ -29,21 +32,27 @@ class AbObserver(ABC):
     
     def init_node(self,node:InitNode):
         self.node = node
-        self.nodedict.append({"round_id":node.round_id,"topic":node.topic,"depth":node.depth,"debater":node.debater,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"topic":node.topic,"depth":node.depth,"debater":node.debater,"content":node.content})
     
     def update_node(self,node:AbNode):
         """更改当前记录的node,j字典形式记录当前node信息到列表中"""
         self.node = node
-        self.nodedict.append({"round_id":node.round_id,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
         
     
     def log(self,node:AbNode):
         pass
     
     
+    def update(self):
+        self.update_relation()
+        self.update_debater()
+        self.update_depth()
+        self.update_round()
+    
     def update_round(self):
         '''全局round+1'''
-        self.round+1
+        self.round +=1
     
 
     
@@ -54,17 +63,22 @@ class AbObserver(ABC):
     
     def update_relation(self):
         '''获取当前节点间的支持反对关系，返回一个矩阵'''
-        self.relation = np.pad(self.relation, pad_width=((0, 1), (0, 1)), mode='constant')
-        self.relation[self.round-1,self.node.target.round_id-1] = self.node.standpoint
-        
+        if self.round == 2:
+            self.relation = np.array([[0,0],[0,0]])
+            self.relation[self.round-1,self.node.target.round_id-1] = self.node.standpoint
+        if self.round > 2:
+            self.relation = np.pad(self.relation, pad_width=((0, 1), (0, 1)), mode='constant')
+           
+        else:
+            pass
     
     def update_depth(self):
         """获取当前各节点的深度，返回一个字典"""
-        self.depthdict[f"node{self.round}":self.node.depth]
+        self.depthdict.update({f"node{self.round}":self.node.depth})
 
     
     def update_debater(self):
-        self.debaterdict[f"node{self.round}":self.node.debater]
+        self.debaterdict.update({f"node{self.round}":self.node.debater})
     
     def update_point(self):
         '''获取当前各节点的分数，返回一个字典'''

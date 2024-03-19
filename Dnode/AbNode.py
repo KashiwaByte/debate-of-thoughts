@@ -17,15 +17,18 @@ class AbNode(ABC):
     
     
     
-    def __init__(self,round:int,out_node:AbNode,standpoint:int,debater):
+    def __init__(self,round:int,out_node:AbNode,debater,standpoint:int):
         self.round_id = round
         self.target = out_node
-        self.standpoint = standpoint
-        self.stand = self.get_stand()
-        self.depth = self.get_depth()
-        self.content = self.get_content()
         self.debater=debater
+        self.standpoint = standpoint
+     #  self.content = self.get_content()
         pass
+    
+    def get(self):
+        self.get_depth()
+        self.get_stand()
+        self.get_content()
         
     
     def get_stand(self):
@@ -41,6 +44,7 @@ class AbNode(ABC):
     def get_content(self):
         '''最小闭环的get_content先做成指定使openai直接生成'''
         ''' self.content = func(out_node.content) '''
+
         pass
     
     
