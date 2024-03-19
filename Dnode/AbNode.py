@@ -28,7 +28,7 @@ class AbNode(ABC):
     def get(self):
         self.get_depth()
         self.get_stand()
-        self.get_content()
+       # self.get_content()
         
     
     def get_stand(self):
