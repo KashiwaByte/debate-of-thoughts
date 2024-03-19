@@ -22,13 +22,12 @@ class AbNode(ABC):
         self.target = out_node
         self.debater=debater
         self.standpoint = standpoint
+        self.get_depth()
+        self.get_stand()
      #  self.content = self.get_content()
         pass
     
-    def get(self):
-        self.get_depth()
-        self.get_stand()
-       # self.get_content()
+
         
     
     def get_stand(self):

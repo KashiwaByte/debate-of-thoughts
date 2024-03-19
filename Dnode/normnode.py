@@ -18,12 +18,12 @@ class NormNode(AbNode):
         self.target = out_node
         self.debater=debater
         self.standpoint = standpoint
+        self.get_depth()
+        self.get_stand()
      #  self.content = self.get_content()
         pass
     
-    
-    def get(self):
-        return super().get()
+
     
     
     def get_stand(self):
