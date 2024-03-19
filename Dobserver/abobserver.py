@@ -11,14 +11,33 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from random import randrange
 from typing import List
+import numpy as np
+from Dnode import AbNode,InitNode
+
 
 class AbObserver(ABC):
     
     def __init__(self,name:str ,max_round:int = 5 ):
         self.round = 1 
         self.name = name
+        self.relation = np.zeros([1],dtype=int)
+        self.nodelist = list()
+        self.depthdict = dict()
+        self.pointdict = dict()
+        self.influencedict = dict()
+        self.debaterdict = dict()
     
-    def log(self):
+    def init_node(self,node:InitNode):
+        self.node = node
+        self.nodedict.append({"round_id":node.round_id,"topic":node.topic,"depth":node.depth,"debater":node.debater,"content":node.content})
+    
+    def update_node(self,node:AbNode):
+        """更改当前记录的node,j字典形式记录当前node信息到列表中"""
+        self.node = node
+        self.nodedict.append({"round_id":node.round_id,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
+        
+    
+    def log(self,node:AbNode):
         pass
     
     
@@ -33,21 +52,31 @@ class AbObserver(ABC):
         pass
     
     
-    def get_relation(self):
+    def update_relation(self):
         '''获取当前节点间的支持反对关系，返回一个矩阵'''
-        pass
+        self.relation = np.pad(self.relation, pad_width=((0, 1), (0, 1)), mode='constant')
+        self.relation[self.round-1,self.node.target.round_id-1] = self.node.standpoint
+        
     
+    def update_depth(self):
+        """获取当前各节点的深度，返回一个字典"""
+        self.depthdict[f"node{self.round}":self.node.depth]
+
     
-    def get_point(self):
+    def update_debater(self):
+        self.debaterdict[f"node{self.round}":self.node.debater]
+    
+    def update_point(self):
         '''获取当前各节点的分数，返回一个字典'''
         pass
     
     
-    def get_influence(self):
+    def update_influence(self):
         '''获取当前各节点的影响力，返回一个字典'''
         pass
         
-    def get_depth(self):
-        """获取当前各节点的深度，返回一个字典"""
+  
+    
+        
     
     

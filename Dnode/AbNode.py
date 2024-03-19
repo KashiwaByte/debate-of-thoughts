@@ -23,6 +23,7 @@ class AbNode(ABC):
         self.standpoint = standpoint
         self.stand = self.get_stand()
         self.depth = self.get_depth()
+        self.content = self.get_content()
         self.debater=debater
         pass
         
