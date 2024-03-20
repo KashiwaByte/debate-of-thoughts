@@ -12,6 +12,7 @@ from abc import ABC, abstractmethod
 from random import randrange
 from typing import List
 import numpy as np
+from loguru import logger
 
 
 import os
@@ -36,6 +37,7 @@ class AbObserver(ABC):
         self.pointdict = dict()
         self.influencedict = dict()
         self.debaterdict = dict()
+        logger.add(f"logs/file_{self.name}.log", encoding="utf-8")
     
     def init_node(self,node:InitNode):
         self.node = node
@@ -47,7 +49,28 @@ class AbObserver(ABC):
         self.nodelist.append({"round_id":node.round_id,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
         
     
-    def log(self,node:AbNode):
+    def log(self):
+        """记录当前轮次信息"""
+        if self.round ==1:
+            logger.info(
+                    f'\n当前轮次为：{self.round}'
+                    f'\n本轮节点使用的Debater为：{self.node.debater}'
+                    f'\n本轮节点的{self.node.topic}论述是：{self.node.content}'
+                    f'\n当前的关系矩阵为：\n{self.relation}'
+                # f'\n当前各节点分数为：{self.point}'
+                # f'\n当前各节点影响力为：{self.influence}'
+                    )
+        if self.round >1:
+            logger.info(
+                    f'\n当前轮次为：{self.round}'
+                    f'\n本轮节点使用的Debater为：{self.node.debater}'
+                    f'\n本轮节点 {self.node.stand} node_{self.node.target.round_id}'
+                #   f'\n本轮节点的上文是：{self.node.context}'
+                    f'\n本轮节点的{self.node.stand}论述是：{self.node.content}'
+                    f'\n当前的关系矩阵为：\n{self.relation}'
+                # f'\n当前各节点分数为：{self.point}'
+                # f'\n当前各节点影响力为：{self.influence}'
+                    )
         pass
     
     
@@ -55,17 +78,12 @@ class AbObserver(ABC):
         self.update_relation()
         self.update_debater()
         self.update_depth()
+        self.log()
         self.update_round()
     
     def update_round(self):
         '''全局round+1'''
         self.round +=1
-    
-
-    
-    def new_round(self):
-        '''根据策略展开新一轮辩论,最小实现不做策略选择'''
-        pass
     
     
     def update_relation(self):
