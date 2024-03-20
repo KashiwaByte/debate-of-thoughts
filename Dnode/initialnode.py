@@ -31,8 +31,5 @@ class InitNode(AbNode):
        
     
     
-    def get_point(self):
-        return super().get_point()
-
     
   

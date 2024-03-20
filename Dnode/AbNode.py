@@ -49,9 +49,6 @@ class AbNode(ABC):
         pass
     
     
-    def get_point(self):
-        pass
-    
     def get_depth(self):
         self.depth = self.target.depth + 1
         pass

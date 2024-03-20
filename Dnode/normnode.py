@@ -37,10 +37,5 @@ class NormNode(AbNode):
         pass
     
     
-    def get_point(self):
-        return super().get_point()
-    
-    
-    
     def get_depth(self):
         return super().get_depth()
