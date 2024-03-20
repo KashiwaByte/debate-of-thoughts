@@ -41,12 +41,12 @@ class AbObserver(ABC):
     
     def init_node(self,node:InitNode):
         self.node = node
-        self.nodelist.append({"round_id":node.round_id,"topic":node.topic,"depth":node.depth,"debater":node.debater,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"depth":node.depth,"debater":node.debater,"content":node.content})
     
     def update_node(self,node:AbNode):
         """更改当前记录的node,j字典形式记录当前node信息到列表中"""
         self.node = node
-        self.nodelist.append({"round_id":node.round_id,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"node":node,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
         
     
     def log(self):
