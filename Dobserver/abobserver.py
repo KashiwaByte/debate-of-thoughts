@@ -24,20 +24,27 @@ relative_path = os.path.join(current_dir, '..')
 # 将相对路径添加到sys.path
 sys.path.append(relative_path)
 from Dnode import AbNode,InitNode
+from Debater import AbDebater
 
 
 class AbObserver(ABC):
     
     def __init__(self,name:str ,max_round:int = 5 ):
         self.round = 1 
+        self.max_round =max_round
         self.name = name
         self.relation = np.zeros([1],dtype=int)
         self.nodelist = list()
+        self.debaterlist = list()
         self.depthdict = dict()
         self.pointdict = dict()
         self.influencedict = dict()
         self.debaterdict = dict()
         logger.add(f"logs/file_{self.name}.log", encoding="utf-8")
+    
+    def add_debater(self,debater:AbDebater,describe):
+        """添加可用辩手到列表"""
+        self.debaterlist.append({"describe":describe,"debater":debater})
     
     def init_node(self,node:InitNode):
         self.node = node
@@ -103,6 +110,7 @@ class AbObserver(ABC):
 
     
     def update_debater(self):
+        """获取当前各节点使用的辩手，返回一个字典"""
         self.debaterdict.update({f"node{self.round}":self.node.debater})
     
     def update_point(self):
