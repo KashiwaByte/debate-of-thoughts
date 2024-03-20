@@ -1,0 +1,196 @@
+2024-03-20 11:43:02.385 | INFO     | Dobserver.abobserver:log:61 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x00000200E312F2B0>
+本轮节点的乔丹是篮球界的GOAT论述是：one
+当前的关系矩阵为：
+[0]
+2024-03-20 11:43:02.385 | INFO     | Dobserver.abobserver:log:61 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x00000200E312F2B0>
+本轮节点的乔丹是篮球界的GOAT论述是：one
+当前的关系矩阵为：
+[0]
+2024-03-20 11:43:02.420 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：two
+当前的关系矩阵为：
+[[ 0  0]
+ [-1  0]]
+2024-03-20 11:43:02.420 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：two
+当前的关系矩阵为：
+[[ 0  0]
+ [-1  0]]
+2024-03-20 11:43:02.438 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：three
+当前的关系矩阵为：
+[[ 0  0  0]
+ [-1  0  0]
+ [-1  0  0]]
+2024-03-20 11:43:02.438 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：three
+当前的关系矩阵为：
+[[ 0  0  0]
+ [-1  0  0]
+ [-1  0  0]]
+2024-03-20 11:43:02.454 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：four
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]]
+2024-03-20 11:43:02.454 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：four
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]]
+2024-03-20 11:46:07.295 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]]
+2024-03-20 11:46:07.295 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]]
+2024-03-20 11:46:07.296 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]]
+2024-03-20 11:46:07.296 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]]
+2024-03-20 11:46:07.297 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]]
+2024-03-20 11:46:07.297 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]]
+2024-03-20 11:46:07.300 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]]
+2024-03-20 11:46:07.300 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]]
+2024-03-20 11:46:07.303 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]]
+2024-03-20 11:46:07.303 | INFO     | Dobserver.abobserver:log:70 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x00000200FF2E7910>
+本轮节点 反对 node_1
+本轮节点的反对论述是：{i}
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]]

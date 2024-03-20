@@ -1,0 +1,44 @@
+2024-03-20 11:51:29.781 | INFO     | Dobserver.abobserver:log:62 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000002B21065E800>
+本轮节点的乔丹是篮球界的GOAT论述是：one
+当前的关系矩阵为：
+[0]
+2024-03-20 11:51:29.813 | INFO     | Dobserver.abobserver:log:71 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x000002B2307AB3A0>
+本轮节点 反对 node_1
+本轮节点的反对论述是：2
+当前的关系矩阵为：
+[[ 0  0]
+ [-1  0]]
+2024-03-20 11:51:29.814 | INFO     | Dobserver.abobserver:log:71 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x000002B2307AB3A0>
+本轮节点 反对 node_1
+本轮节点的反对论述是：3
+当前的关系矩阵为：
+[[ 0  0  0]
+ [-1  0  0]
+ [-1  0  0]]
+2024-03-20 11:51:29.815 | INFO     | Dobserver.abobserver:log:71 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x000002B2307AB3A0>
+本轮节点 反对 node_1
+本轮节点的反对论述是：4
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]]
+2024-03-20 11:51:29.816 | INFO     | Dobserver.abobserver:log:71 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Dnode.initialnode.InitNode object at 0x000002B2307AB3A0>
+本轮节点 反对 node_1
+本轮节点的反对论述是：5
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]]
