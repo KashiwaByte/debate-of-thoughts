@@ -24,11 +24,13 @@ class AbNode(ABC):
         self.standpoint = standpoint
         self.get_depth()
         self.get_stand()
+        self.get_topic()
      #  self.get_content()
         pass
     
 
-        
+    def get_topic(self):
+        self.topic = self.target.topic
     
     def get_stand(self):
         if self.standpoint == 1:

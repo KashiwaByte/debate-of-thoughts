@@ -13,18 +13,13 @@ from Debater import D_Openai
 class NormNode(AbNode):
     
     
-    def __init__(self, round: int, out_node: AbNode,debater,standpoint:int):
-        self.round_id = round
-        self.target = out_node
-        self.debater=debater
-        self.standpoint = standpoint
-        self.get_depth()
-        self.get_stand()
-     #  self.get_content()
-        pass
+    def __init__(self, round: int, out_node: AbNode, debater, standpoint: int):
+        super().__init__(round, out_node, debater, standpoint)
     
 
     
+    def get_topic(self):
+        return super().get_topic()
     
     def get_stand(self):
         return super().get_stand()
