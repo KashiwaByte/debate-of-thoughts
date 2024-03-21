@@ -1,6 +1,6 @@
 # Debate-of-Thoughts(DoT)
 
-Search and RAG are just tools, verification is the key. The more the truth is debated, the clearer it becomes.
+**Search and RAG are just tools, verification is the key. The more the truth is debated, the clearer it becomes.**
 
 ## Roadmaps
 基础性的框架搭建与最小闭环已经实现了，接下来中需要对每个模块进行一定的优化，重要性排行如下：
@@ -16,7 +16,8 @@ Search and RAG are just tools, verification is the key. The more the truth is de
 
 
 ### Node
-思考一下汇总Node
+- 思考一下汇总Node
+- 优化提示词
 
 ### Graph
 思考一下能在Neo4j中实现怎么样的再利用
