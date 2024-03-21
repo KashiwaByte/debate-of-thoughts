@@ -27,7 +27,7 @@ class NormNode(AbNode):
     
     def get_content(self):
         message_template =[
-                 {"role": "system", "content": f"你是一个观点鲜明的辩手，你需要根据接收到的命令选择明确地{self.stand}以下内容"},
+                 {"role": "system", "content": f"你是一个观点鲜明的辩手，你需要根据接收到的命令选择明确地{self.stand}以下内容,值得注意的是，支持一个反对论述那么你的立场也是反对原论述，反对一个反对论述那么你的立场就应该变为支持原论述"},
                  {"role": "user", "content":""},
                             ]
         message_template[1]['content'] = self.target.content
