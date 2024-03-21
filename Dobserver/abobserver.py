@@ -72,7 +72,7 @@ class AbObserver(ABC):
                     f'\n当前轮次为：{self.round}'
                     f'\n本轮节点使用的Debater为：{self.node.debater}'
                     f'\n本轮节点 {self.node.stand} node_{self.node.target.round_id}'
-                #   f'\n本轮节点的上文是：{self.node.context}'
+                    f'\n本轮节点的上文是：{self.node.context}'
                     f'\n本轮节点的{self.node.stand}论述是：{self.node.content}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
                 # f'\n当前各节点分数为：{self.point}'

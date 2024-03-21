@@ -25,7 +25,7 @@ class AbNode(ABC):
         self.get_depth()
         self.get_stand()
         self.get_topic()
-     #  self.get_content()
+        self.get_content()
         pass
     
 

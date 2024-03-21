@@ -19,6 +19,7 @@ sys.path.append(relative_path)
 from Debater import D_Openai
 from Dnode import AbNode,InitNode,NormNode
 from Dobserver import AbObserver
+import random
 class AbJudge(ABC):
     
     def __init__(self,observer:AbObserver):
@@ -46,7 +47,9 @@ class AbJudge(ABC):
     
     def get_outnode(self):
         """新节点获取目标节点的方法"""
-        return  self.observer.nodelist[0]["node"]
+        i = self.observer.round
+        n = random.randint(1,self.round-1)
+        return  self.observer.nodelist[n-1]["node"]
         
         
         
@@ -58,4 +61,4 @@ class AbJudge(ABC):
         
     def get_standpoint(self):
         """新节点获取论述意向的方法"""
-        return -1
+        return random.choice([-1,1])
