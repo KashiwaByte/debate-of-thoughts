@@ -8,6 +8,6 @@ r"""
     智能体模块
 """
 
-
-from .d_openai import D_Openai
 from .abdebater import AbDebater
+from .d_openai import D_Openai
+from .d_zhipu  import D_Zhipuai
