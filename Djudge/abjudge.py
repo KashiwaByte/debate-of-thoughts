@@ -48,7 +48,7 @@ class AbJudge(ABC):
     def get_outnode(self):
         """新节点获取目标节点的方法"""
         i = self.observer.round
-        n = random.randint(1,self.round-1)
+        n = random.randint(1,i-1)
         return  self.observer.nodelist[n-1]["node"]
         
         
@@ -56,7 +56,7 @@ class AbJudge(ABC):
         
     def get_debater(self):
         """新节点获取辩手的方法"""
-        return self.observer.nodelist[0]["node"]
+        return self.observer.nodelist[0]["debater"]
         
         
     def get_standpoint(self):

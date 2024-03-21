@@ -27,7 +27,7 @@ class D_Zhipuai(AbDebater):
         
     def invoke(self,messages):
         completion = self.response(messages)
-        answer = completion.choices[0].message
+        answer = completion.choices[0].message.content
         return answer
     
     
