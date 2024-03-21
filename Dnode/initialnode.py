@@ -8,7 +8,7 @@ r"""
     最初节点类
 """
 
-from .abnodes import AbNode
+from .abnode import AbNode
 from Debater import D_Openai
 class InitNode(AbNode):
     

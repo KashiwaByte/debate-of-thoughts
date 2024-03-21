@@ -8,7 +8,7 @@ r"""
     基础类节点
 """
 
-from .abnodes import AbNode
+from .abnode import AbNode
 from Debater import D_Openai
 class NormNode(AbNode):
     
