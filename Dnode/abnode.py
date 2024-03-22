@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 r"""
 @DATE: 2024-03-18 16:11:06
-@File: Dnode\AbNode.py
+@File: Dnode\abnode.py
 @IDE: vscode
 @Description:
     抽象node类
