@@ -25,16 +25,12 @@
 ## 模块介绍
 目前分为以下几个大的模块:
 
-- Debater：即Agent智能体，可以集成市面上的多智能体或者RAG工具等，主要作用是生成node（round）中的内容。
-
-- Node：即round轮次，分为初始的轮次和后续的轮次，后续的轮次需要传入连接轮次。
-
+- Debater：即Agent智能体，可以集成市面上的多智能体或者RAG工具等，作用是生成Node中的内容。
+- Node：即问答轮次，分为初始的轮次和后续的轮次，后续的轮次需要传入连接轮次并用边属性表示支持与反对。
 - Observer：负责记录和更新全局信息，包括全局的消息信息，节点的关系（矩阵），节点的分数（字典），节点的影响力（字典）。
-
-
 - Judge：负责下一个轮次选择什么辩手，下个轮次针对哪个Node，是选择支持还是反对,并且给每一轮生成的答案进行评分。
-
 - Graph：负责上传Observer中的node数据到图数据库neo4j中，并实现后续的分析
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240323101420.png)
 
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240318215900.png)
 
