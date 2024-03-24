@@ -40,6 +40,15 @@
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240318215830.png)
 
 
+## 问题与展望
+
+目前已经实现调用Project Debater 实现论证分数获取（但是实际效果上中文的分数估计很有问题，基本拉不开差距）
+
+
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324160845.png)
+
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324160916.png)
+
 
 
 
