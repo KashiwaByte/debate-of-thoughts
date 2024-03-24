@@ -34,12 +34,23 @@ class AbNode(ABC):
         self.topic = self.target.topic
     
     def get_stand(self):
-        if self.standpoint == 1:
-            self.stand = "支持"
-        elif self.standpoint == -1:
-            self.stand = "反对"
-        else: 
-            print(f'standpoint只能输入1或者-1')
+        
+        if self.language == "zh":
+            if self.standpoint == 1:
+                self.stand = "支持"
+            elif self.standpoint == -1:
+                self.stand = "反对"
+            else: 
+                print(f'standpoint只能输入1或者-1')
+        elif self.language == 'en':
+            if self.standpoint == 1:
+                self.stand = "support"
+            elif self.standpoint == -1:
+                self.stand = "oppose"
+            else: 
+                print(f'standpoint can only be 1 or -1')
+        else:
+            print("当前只支持'zh'(中文）和'en'(英文)")
 
     
     @abstractmethod
