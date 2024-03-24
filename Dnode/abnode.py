@@ -17,11 +17,12 @@ class AbNode(ABC):
     
     
     
-    def __init__(self,round:int,out_node:AbNode,debater,standpoint:int):
+    def __init__(self,round:int,out_node:AbNode,debater,standpoint:int,language:str = "zh"):
         self.round_id = round
         self.target = out_node
         self.debater=debater
         self.standpoint = standpoint
+        self.language = language
         self.get_depth()
         self.get_stand()
         self.get_topic()
