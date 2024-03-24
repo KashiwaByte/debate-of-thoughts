@@ -64,7 +64,7 @@ class AbObserver(ABC):
                     f'\n本轮节点使用的Debater为：{self.node.debater}'
                     f'\n本轮节点的{self.node.topic}论述是：{self.node.content}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
-                    f'\n当前各节点分数为：{self.point}'
+                    f'\n当前各节点分数为：{self.pointdict}'
                 # f'\n当前各节点影响力为：{self.influence}'
                     )
         if self.round >1:
@@ -75,7 +75,7 @@ class AbObserver(ABC):
                     f'\n本轮节点的上文是：{self.node.context}'
                     f'\n本轮节点的{self.node.stand}论述是：{self.node.content}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
-                    f'\n当前各节点分数为：{self.point}'
+                    f'\n当前各节点分数为：{self.pointdict}'
                 # f'\n当前各节点影响力为：{self.influence}'
                     )
         pass

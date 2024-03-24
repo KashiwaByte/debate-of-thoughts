@@ -45,7 +45,7 @@ class AbJudge(ABC):
     def get_point(self,node:AbNode):
         """新节点获取分数的方法"""
         topic = node.topic
-        sentence = [node.content]
+        sentence = node.content
         sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
         scores = self.argument_quality_client.run(sentence_topic_dict)
         return scores

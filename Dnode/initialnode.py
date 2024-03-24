@@ -18,7 +18,7 @@ class InitNode(AbNode):
         self.depth = 0
         self.debater=debater
         self.get_content()
-        self.get_point()
+       
         
         
     def get_content(self):
@@ -31,13 +31,7 @@ class InitNode(AbNode):
         answer = self.debater.invoke(init_messages)
         self.content = answer
        
-    def get_point(self):
-        """节点获取分数的方法"""
-        topic = self.topic
-        sentence = [self.content]
-        sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
-        scores = self.argument_quality_client.run(sentence_topic_dict)
-        self.point = scores
+
     
     
   
