@@ -49,6 +49,11 @@
 
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324160916.png)
 
+英文的区分度还是非常不错的，但是由于GPT 美式政治正确的存在，一些议题(比如禁枪)经常会有不敢答的情况出现。
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324163338.png)
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324163352.png)
+
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324163506.png)
 
 
 
