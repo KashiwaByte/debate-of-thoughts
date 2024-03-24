@@ -23,8 +23,9 @@ import random
 from debater_python_api.api.debater_api import DebaterApi
 class AbJudge(ABC):
     
-    def __init__(self,observer:AbObserver,debaterapi:str):
+    def __init__(self,observer:AbObserver,debaterapi:str,language:str = 'zh'):
         self.observer = observer
+        self.language = language
         debater_api = DebaterApi(debaterapi)
         self.argument_quality_client = debater_api.get_argument_quality_client()
         
@@ -36,7 +37,7 @@ class AbJudge(ABC):
         new_debater = self.get_debater()  #后续根据算法得出
         new_standpoint = self.get_standpoint()                 #后续根据算法得出
         
-        node  = NormNode(round=new_round, out_node=new_outnode, debater=new_debater , standpoint=new_standpoint)
+        node  = NormNode(round=new_round, out_node=new_outnode, debater=new_debater , standpoint=new_standpoint,language=self.language)
         node.point = self.get_point(node)
         return node
         
