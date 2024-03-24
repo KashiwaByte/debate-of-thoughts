@@ -48,12 +48,12 @@ class AbObserver(ABC):
     
     def init_node(self,node:InitNode):
         self.node = node
-        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"depth":node.depth,"debater":node.debater,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"point":node.point,"depth":node.depth,"debater":node.debater,"content":node.content})
     
     def update_node(self,node:AbNode):
         """更改当前记录的node,j字典形式记录当前node信息到列表中"""
         self.node = node
-        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"point":node.point,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
         
     
     def log(self):
@@ -64,7 +64,7 @@ class AbObserver(ABC):
                     f'\n本轮节点使用的Debater为：{self.node.debater}'
                     f'\n本轮节点的{self.node.topic}论述是：{self.node.content}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
-                # f'\n当前各节点分数为：{self.point}'
+                    f'\n当前各节点分数为：{self.point}'
                 # f'\n当前各节点影响力为：{self.influence}'
                     )
         if self.round >1:
@@ -75,7 +75,7 @@ class AbObserver(ABC):
                     f'\n本轮节点的上文是：{self.node.context}'
                     f'\n本轮节点的{self.node.stand}论述是：{self.node.content}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
-                # f'\n当前各节点分数为：{self.point}'
+                    f'\n当前各节点分数为：{self.point}'
                 # f'\n当前各节点影响力为：{self.influence}'
                     )
         pass
@@ -85,6 +85,7 @@ class AbObserver(ABC):
         self.update_relation()
         self.update_debater()
         self.update_depth()
+        self.update_point()
         self.log()
         self.update_round()
     
@@ -115,7 +116,8 @@ class AbObserver(ABC):
     
     def update_point(self):
         '''获取当前各节点的分数，返回一个字典'''
-        pass
+        self.pointdict.update({f"node{self.round}":self.node.point})
+        
     
     
     def update_influence(self):

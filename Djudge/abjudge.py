@@ -20,11 +20,14 @@ from Debater import D_Openai
 from Dnode import AbNode,InitNode,NormNode
 from Dobserver import AbObserver
 import random
+from debater_python_api.api.debater_api import DebaterApi
 class AbJudge(ABC):
     
-    def __init__(self,observer:AbObserver):
+    def __init__(self,observer:AbObserver,debaterapi:str):
         self.observer = observer
-        pass
+        debater_api = DebaterApi(debaterapi)
+        self.argument_quality_client = debater_api.get_argument_quality_client()
+        
     
     
     def new_node(self):
@@ -34,15 +37,19 @@ class AbJudge(ABC):
         new_standpoint = self.get_standpoint()                 #后续根据算法得出
         
         node  = NormNode(round=new_round, out_node=new_outnode, debater=new_debater , standpoint=new_standpoint)
-        
-       #node.point = self.get_point()
+        node.point = self.get_point(node)
         return node
-        pass
+        
     
     
-    def get_point(self):
+    def get_point(self,node:AbNode):
         """新节点获取分数的方法"""
-        pass
+        topic = node.topic
+        sentence = [node.content]
+        sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
+        scores = self.argument_quality_client.run(sentence_topic_dict)
+        return scores
+        
     
     
     def get_outnode(self):
