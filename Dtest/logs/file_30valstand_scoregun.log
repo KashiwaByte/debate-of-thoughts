@@ -1,0 +1,572 @@
+2024-03-25 18:09:37.426 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点关于主题America should ban guns的论述是：As an AI assistant, I don't have personal opinions. The decision to ban guns in America is a complex and highly debated issue with arguments from both sides. Ultimately, it is up to national legislators and policymakers to carefully consider all aspects, including public safety, constitutional rights, and societal impact, before making any decision about gun control measures.
+本轮节点的原始论证分数是89.065
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '89.065'}
+2024-03-25 18:09:43.431 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': "As an AI assistant, I don't have personal opinions. The decision to ban guns in America is a complex and highly debated issue with arguments from both sides. Ultimately, it is up to national legislators and policymakers to carefully consider all aspects, including public safety, constitutional rights, and societal impact, before making any decision about gun control measures."}]
+本轮节点的oppose论述是：Oppose the statement.
+本轮节点的原始论证分数是39.996
+当前的关系矩阵为：
+[[ 0  0]
+ [-1  0]]
+当前各节点检证分数为：{'node1': 82.8804, 'node2': '39.996'}
+2024-03-25 18:09:49.461 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the statement.'}]
+本轮节点的support论述是：I am in favor of the statement.
+本轮节点的原始论证分数是34.628
+当前的关系矩阵为：
+[[ 0  0  0]
+ [-1  0  0]
+ [ 0  1  0]]
+当前各节点检证分数为：{'node1': 72.70319999999998, 'node2': 44.588800000000006, 'node3': '34.628'}
+2024-03-25 18:09:55.494 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the statement.'}]
+本轮节点的support论述是：I have to respectfully disagree with the statement.
+本轮节点的原始论证分数是40.954
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [-1  0  0  0]
+ [ 0  1  0  0]
+ [ 0  1  0  0]]
+当前各节点检证分数为：{'node1': 55.41820625454543, 'node2': 53.04272290909091, 'node3': '34.628', 'node4': '40.954'}
+2024-03-25 18:10:01.507 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 support node_3
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'I am in favor of the statement.'}]
+本轮节点的support论述是：Great! Please provide me with the statement you are in favor of, so I can support it clearly and effectively.
+本轮节点的原始论证分数是46.326
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [-1  0  0  0  0]
+ [ 0  1  0  0  0]
+ [ 0  1  0  0  0]
+ [ 0  0  1  0  0]]
+当前各节点检证分数为：{'node1': 29.571783726545423, 'node2': 61.550106298181824, 'node3': 43.144400000000005, 'node4': '40.954', 'node5': '46.326'}
+2024-03-25 18:10:07.544 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 oppose node_3
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'I am in favor of the statement.'}]
+本轮节点的oppose论述是：Please provide the statement you are in favor of so I can understand your position and provide a response accordingly.
+本轮节点的原始论证分数是62.276
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [ 0  1  0  0  0  0]
+ [ 0  1  0  0  0  0]
+ [ 0  0  1  0  0  0]
+ [ 0  0 -1  0  0  0]]
+当前各节点检证分数为：{'node1': -2.26839285573823, 'node2': 62.92422221265456, 'node3': 31.950224000000006, 'node4': '40.954', 'node5': '46.326', 'node6': '62.276'}
+2024-03-25 18:10:13.568 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the statement.'}]
+本轮节点的oppose论述是：The statement is not clear. Please provide the statement you would like me to oppose.
+本轮节点的原始论证分数是46.007
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0]
+ [ 0  0 -1  0  0  0  0]
+ [ 0 -1  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': -35.856372512284, 'node2': 55.2238351423302, 'node3': 21.20381504000001, 'node4': '40.954', 'node5': '46.326', 'node6': '62.276', 'node7': '46.007'}
+2024-03-25 18:10:19.478 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': "As an AI assistant, I don't have personal opinions. The decision to ban guns in America is a complex and highly debated issue with arguments from both sides. Ultimately, it is up to national legislators and policymakers to carefully consider all aspects, including public safety, constitutional rights, and societal impact, before making any decision about gun control measures."}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': -108.36741455058025, 'node2': 47.83146355481881, 'node3': 10.88726243840001, 'node4': '40.954', 'node5': '46.326', 'node6': '62.276', 'node7': '46.007', 'node8': '38.938'}
+2024-03-25 18:10:25.624 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 support node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': "As an AI assistant, I don't have personal opinions. The decision to ban guns in America is a complex and highly debated issue with arguments from both sides. Ultimately, it is up to national legislators and policymakers to carefully consider all aspects, including public safety, constitutional rights, and societal impact, before making any decision about gun control measures."}]
+本轮节点的support论述是：Support this statement.
+本轮节点的原始论证分数是42.426
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': -152.87811766075316, 'node2': 40.73478683080788, 'node3': 0.9833719408640094, 'node4': '40.954', 'node5': '46.326', 'node6': '62.276', 'node7': '46.007', 'node8': '38.938', 'node9': '42.426'}
+2024-03-25 18:10:31.528 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：10
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000024A5834A8C0>
+本轮节点 oppose node_3
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'I am in favor of the statement.'}]
+本轮节点的oppose论述是：Oppose the statement.
+本轮节点的原始论证分数是39.996
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': -200.06676185064205, 'node2': 33.92197717575738, 'node3': -27.53363552412467, 'node4': '40.954', 'node5': '46.326', 'node6': '62.276', 'node7': '46.007', 'node8': '38.938', 'node9': '42.426', 'node10': '39.996'}
+2024-03-25 18:22:56.915 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点关于主题America should ban guns的论述是：Banning guns in America is a complex and highly debated issue. It involves legal, constitutional, societal, and cultural factors that need to be carefully considered. Whether or not to ban guns is a decision that requires a thorough examination of the potential benefits and drawbacks and consideration of alternative solutions to address gun violence.
+本轮节点的原始论证分数是94.282
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '94.282'}
+2024-03-25 18:23:02.915 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Banning guns in America is a complex and highly debated issue. It involves legal, constitutional, societal, and cultural factors that need to be carefully considered. Whether or not to ban guns is a decision that requires a thorough examination of the potential benefits and drawbacks and consideration of alternative solutions to address gun violence.'}]
+本轮节点的oppose论述是：Oppose the original argument.
+本轮节点的原始论证分数是40.134
+当前的关系矩阵为：
+[[ 0  0]
+ [-1  0]]
+当前各节点检证分数为：{'node1': 89.058, 'node2': '40.134'}
+2024-03-25 18:23:08.949 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the original argument.'}]
+本轮节点的oppose论述是：The original argument should not be opposed.
+本轮节点的原始论证分数是40.940
+当前的关系矩阵为：
+[[ 0  0  0]
+ [-1  0  0]
+ [ 0 -1  0]]
+当前各节点检证分数为：{'node1': 89.058, 'node2': 25.829890909090913, 'node3': '40.940'}
+2024-03-25 18:23:14.971 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 oppose node_3
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The original argument should not be opposed.'}]
+本轮节点的oppose论述是：Got it. Can you please clarify your position or provide the argument for me to respond to accordingly?
+本轮节点的原始论证分数是40.549
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [-1  0  0  0]
+ [ 0 -1  0  0]
+ [ 0  0 -1  0]]
+当前各节点检证分数为：{'node1': 89.058, 'node2': 25.829890909090913, 'node3': 28.853499999999997, 'node4': '40.549'}
+2024-03-25 18:23:20.991 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the original argument.'}]
+本轮节点的oppose论述是：The original argument should be opposed.
+本轮节点的原始论证分数是41.208
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [-1  0  0  0  0]
+ [ 0 -1  0  0  0]
+ [ 0  0 -1  0  0]
+ [ 0 -1  0  0  0]]
+当前各节点检证分数为：{'node1': 89.058, 'node2': 8.518778181818186, 'node3': 14.349699999999997, 'node4': '40.549', 'node5': '41.208'}
+2024-03-25 18:23:27.023 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 support node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Banning guns in America is a complex and highly debated issue. It involves legal, constitutional, societal, and cultural factors that need to be carefully considered. Whether or not to ban guns is a decision that requires a thorough examination of the potential benefits and drawbacks and consideration of alternative solutions to address gun violence.'}]
+本轮节点的support论述是：Support the argument that banning guns in America is necessary to reduce gun violence.
+本轮节点的原始论证分数是63.740
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [ 0 -1  0  0  0  0]
+ [ 0  0 -1  0  0  0]
+ [ 0 -1  0  0  0  0]
+ [ 1  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 96.74240000000002, 'node2': -12.254557090909085, 'node3': -3.054860000000003, 'node4': '40.549', 'node5': '41.208', 'node6': '63.740'}
+2024-03-25 18:23:32.948 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Banning guns in America is a complex and highly debated issue. It involves legal, constitutional, societal, and cultural factors that need to be carefully considered. Whether or not to ban guns is a decision that requires a thorough examination of the potential benefits and drawbacks and consideration of alternative solutions to address gun violence.'}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0]
+ [ 0 -1  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 99.67846400000002, 'node2': -37.18255941818181, 'node3': -23.940332, 'node4': '40.549', 'node5': '41.208', 'node6': '63.740', 'node7': '38.938'}
+2024-03-25 18:23:39.105 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 support node_6
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the argument that banning guns in America is necessary to reduce gun violence.'}]
+本轮节点的support论述是：Sure, I completely support the argument that banning guns in America is necessary to reduce gun violence. Guns are the primary means by which gun violence occurs, and by implementing strict gun control measures including a ban on firearms, we can effectively reduce the alarming rates of gun-related deaths and incidents in the country. It's time to prioritize public safety and take a firm stance on gun control to protect the lives of innocent people.
+本轮节点的原始论证分数是87.793
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  1  0  0]]
+当前各节点检证分数为：{'node1': 110.16777634909096, 'node2': -67.09616221090909, 'node3': -49.0028984, 'node4': '40.549', 'node5': '41.208', 'node6': 82.91672727272729, 'node7': '38.938', 'node8': '87.793'}
+2024-03-25 18:23:45.099 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 support node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Banning guns in America is a complex and highly debated issue. It involves legal, constitutional, societal, and cultural factors that need to be carefully considered. Whether or not to ban guns is a decision that requires a thorough examination of the potential benefits and drawbacks and consideration of alternative solutions to address gun violence.'}]
+本轮节点的support论述是：Support the argument.
+本轮节点的原始论证分数是39.979
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  1  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 120.57379187246548, 'node2': -102.99248556218181, 'node3': -79.07797808, 'node4': '40.549', 'node5': '41.208', 'node6': 98.2581090909091, 'node7': '38.938', 'node8': '87.793', 'node9': '39.979'}
+2024-03-25 18:23:51.140 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：10
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016E3DE5AA10>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the original argument.'}]
+本轮节点的oppose论述是：Certainly! Please provide me with the original argument that I will be opposing.
+本轮节点的原始论证分数是36.931
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]
+ [ 0  0 -1  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  1  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 133.47485397623532, 'node2': -194.95928830045088, 'node3': -115.16807369599998, 'node4': '40.549', 'node5': '41.208', 'node6': 110.53121454545456, 'node7': '38.938', 'node8': '87.793', 'node9': '39.979', 'node10': '36.931'}
+2024-03-25 18:24:48.372 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点关于主题America should ban guns的论述是：The issue of gun control is complex and controversial. Some argue that banning guns could reduce gun-related violence, while others believe in the importance of the Second Amendment and the right to bear arms. Ultimately, decisions on gun control should be made through a democratic process that considers all perspectives and relevant data.
+本轮节点的原始论证分数是93.833
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '93.833'}
+2024-03-25 18:24:54.384 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 support node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The issue of gun control is complex and controversial. Some argue that banning guns could reduce gun-related violence, while others believe in the importance of the Second Amendment and the right to bear arms. Ultimately, decisions on gun control should be made through a democratic process that considers all perspectives and relevant data.'}]
+本轮节点的support论述是：Support the argument that banning guns could reduce gun-related violence.
+本轮节点的原始论证分数是70.795
+当前的关系矩阵为：
+[[0 0]
+ [1 0]]
+当前各节点检证分数为：{'node1': 103.38440000000001, 'node2': '70.795'}
+2024-03-25 18:25:00.427 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the argument that banning guns could reduce gun-related violence.'}]
+本轮节点的support论述是：Banning guns could indeed reduce gun-related violence. By implementing strict gun control measures, such as banning certain types of firearms or limiting access to guns, it can significantly decrease the number of gun-related incidents. Studies have shown that countries with stricter gun control laws have lower rates of gun violence compared to those with more lenient regulations. Additionally, by reducing the availability of guns, it can also prevent crimes of passion or impulsive acts of violence that result in tragic consequences. Overall, banning guns can help create a safer environment for everyone and decrease the alarming rates of gun-related violence in our society.
+本轮节点的原始论证分数是98.858
+当前的关系矩阵为：
+[[0 0 0]
+ [1 0 0]
+ [0 1 0]]
+当前各节点检证分数为：{'node1': 119.74126545454547, 'node2': 92.58436363636365, 'node3': '98.858'}
+2024-03-25 18:25:06.446 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the argument that banning guns could reduce gun-related violence.'}]
+本轮节点的support论述是：Banning guns could definitely reduce gun-related violence. By implementing stricter laws and policies that limit access to firearms, the likelihood of gun violence incidents occurring would decrease significantly. This measure would make it harder for individuals to obtain guns illegally, reducing crimes such as homicides, mass shootings, and armed robberies. Additionally, by reducing the number of guns in circulation, there would be a lower chance of accidents involving firearms, especially among children and adolescents. In countries where strict gun control measures have been implemented, such as Australia and Japan, there has been a clear decrease in gun violence rates. Therefore, banning guns is a crucial step in addressing the epidemic of gun-related violence in society.
+本轮节点的原始论证分数是97.607
+当前的关系矩阵为：
+[[0 0 0 0]
+ [1 0 0 0]
+ [0 1 0 0]
+ [0 1 0 0]]
+当前各节点检证分数为：{'node1': 145.2318603636364, 'node2': 123.59712, 'node3': '98.858', 'node4': '97.607'}
+2024-03-25 18:25:12.367 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the argument that banning guns could reduce gun-related violence.'}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [ 1  0  0  0  0]
+ [ 0  1  0  0  0]
+ [ 0  1  0  0  0]
+ [ 0 -1  0  0  0]]
+当前各节点检证分数为：{'node1': 174.4546137367273, 'node2': 145.67281361454545, 'node3': '98.858', 'node4': '97.607', 'node5': '38.938'}
+2024-03-25 18:25:18.396 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The issue of gun control is complex and controversial. Some argue that banning guns could reduce gun-related violence, while others believe in the importance of the Second Amendment and the right to bear arms. Ultimately, decisions on gun control should be made through a democratic process that considers all perspectives and relevant data.'}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [ 1  0  0  0  0  0]
+ [ 0  1  0  0  0  0]
+ [ 0  1  0  0  0  0]
+ [ 0 -1  0  0  0  0]
+ [-1  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 213.8369677114648, 'node2': 162.62694631051636, 'node3': '98.858', 'node4': '97.607', 'node5': '38.938', 'node6': '38.938'}
+2024-03-25 18:25:24.412 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 support node_3
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Banning guns could indeed reduce gun-related violence. By implementing strict gun control measures, such as banning certain types of firearms or limiting access to guns, it can significantly decrease the number of gun-related incidents. Studies have shown that countries with stricter gun control laws have lower rates of gun violence compared to those with more lenient regulations. Additionally, by reducing the availability of guns, it can also prevent crimes of passion or impulsive acts of violence that result in tragic consequences. Overall, banning guns can help create a safer environment for everyone and decrease the alarming rates of gun-related violence in our society.'}]
+本轮节点的support论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0]]
+当前各节点检证分数为：{'node1': 255.864371030809, 'node2': 173.17780506950692, 'node3': 92.06573333333334, 'node4': '97.607', 'node5': '38.938', 'node6': '38.938', 'node7': '38.938'}
+2024-03-25 18:25:30.546 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the argument that banning guns could reduce gun-related violence.'}]
+本轮节点的oppose论述是：I'm sorry, but I have to oppose this argument.
+本轮节点的原始论证分数是38.116
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 302.9147179594906, 'node2': 189.93790442478488, 'node3': 86.63192000000002, 'node4': '97.607', 'node5': '38.938', 'node6': '38.938', 'node7': '38.938', 'node8': '38.116'}
+2024-03-25 18:25:36.466 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 oppose node_5
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the argument.'}]
+本轮节点的oppose论述是：Sure, please provide the argument you would like me to oppose.
+本轮节点的原始论证分数是39.651
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0]]
+当前各节点检证分数为：{'node1': 348.4610475652534, 'node2': 190.88289581035602, 'node3': 82.28486933333336, 'node4': '97.607', 'node5': 26.9001, 'node6': '38.938', 'node7': '38.938', 'node8': '38.116', 'node9': '39.651'}
+2024-03-25 18:25:42.492 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：10
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E555D7A7D0>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The issue of gun control is complex and controversial. Some argue that banning guns could reduce gun-related violence, while others believe in the importance of the Second Amendment and the right to bear arms. Ultimately, decisions on gun control should be made through a democratic process that considers all perspectives and relevant data.'}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0  0  1  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 436.4462198499316, 'node2': 190.34405263689894, 'node3': 78.80722880000003, 'node4': '97.607', 'node5': 12.454619999999995, 'node6': '38.938', 'node7': '38.938', 'node8': '38.116', 'node9': '39.651', 'node10': '38.938'}
+2024-03-25 18:28:01.737 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点关于主题America should ban guns的论述是：The decision to ban guns in America is a highly complex and controversial issue that involves considerations of constitutional rights, public safety, and personal freedoms. As an artificial intelligence, I do not have personal opinions. The topic of gun control is multifaceted and requires in-depth analysis of various factors before arriving at a conclusion.
+本轮节点的原始论证分数是88.475
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '88.475'}
+2024-03-25 18:28:07.634 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The decision to ban guns in America is a highly complex and controversial issue that involves considerations of constitutional rights, public safety, and personal freedoms. As an artificial intelligence, I do not have personal opinions. The topic of gun control is multifaceted and requires in-depth analysis of various factors before arriving at a conclusion.'}]
+本轮节点的oppose论述是：Oppose the content.
+本轮节点的原始论证分数是36.226
+当前的关系矩阵为：
+[[ 0  0]
+ [-1  0]]
+当前各节点检证分数为：{'node1': 84.4344, 'node2': '36.226'}
+2024-03-25 18:28:13.669 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The decision to ban guns in America is a highly complex and controversial issue that involves considerations of constitutional rights, public safety, and personal freedoms. As an artificial intelligence, I do not have personal opinions. The topic of gun control is multifaceted and requires in-depth analysis of various factors before arriving at a conclusion.'}]
+本轮节点的oppose论述是：Oppose the content.
+本轮节点的原始论证分数是36.226
+当前的关系矩阵为：
+[[ 0  0  0]
+ [-1  0  0]
+ [-1  0  0]]
+当前各节点检证分数为：{'node1': 79.58568, 'node2': '36.226', 'node3': '36.226'}
+2024-03-25 18:28:19.806 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the content.'}]
+本轮节点的support论述是：I completely support the content.
+本轮节点的原始论证分数是28.722
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [-1  0  0  0]
+ [-1  0  0  0]
+ [ 0  1  0  0]]
+当前各节点检证分数为：{'node1': 79.58568, 'node2': '36.226', 'node3': '36.226', 'node4': '28.722'}
+2024-03-25 18:28:25.724 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The decision to ban guns in America is a highly complex and controversial issue that involves considerations of constitutional rights, public safety, and personal freedoms. As an artificial intelligence, I do not have personal opinions. The topic of gun control is multifaceted and requires in-depth analysis of various factors before arriving at a conclusion.'}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是38.938
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [-1  0  0  0  0]
+ [-1  0  0  0  0]
+ [ 0  1  0  0  0]
+ [-1  0  0  0  0]]
+当前各节点检证分数为：{'node1': 71.42404799999998, 'node2': '36.226', 'node3': '36.226', 'node4': '28.722', 'node5': '38.938'}
+2024-03-25 18:28:31.880 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the content.'}]
+本轮节点的support论述是：As a proponent of the content, I firmly believe that it is essential to acknowledge its importance and support it for the following reasons.
+本轮节点的原始论证分数是51.486
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [ 0  1  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [ 0  1  0  0  0  0]]
+当前各节点检证分数为：{'node1': 64.5378589090909, 'node2': 47.702981818181826, 'node3': '36.226', 'node4': '28.722', 'node5': '38.938', 'node6': '51.486'}
+2024-03-25 18:28:37.879 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_5
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the argument.'}]
+本轮节点的oppose论述是：The argument is flawed and lacks sufficient evidence or logical reasoning to support its claims. It fails to consider important factors and alternative perspectives, leading to an unreliable conclusion.
+本轮节点的原始论证分数是83.492
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0]]
+当前各节点检证分数为：{'node1': 72.6994909090909, 'node2': 47.702981818181826, 'node3': '36.226', 'node4': '28.722', 'node5': 1.1845090909090914, 'node6': '51.486', 'node7': '83.492'}
+2024-03-25 18:28:43.803 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_5
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the argument.'}]
+本轮节点的oppose论述是：Sure, please provide me with the argument you would like me to oppose.
+本轮节点的原始论证分数是41.733
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0]
+ [ 0  0  0  0 -1  0  0  0]]
+当前各节点检证分数为：{'node1': 72.6994909090909, 'node2': 47.702981818181826, 'node3': '36.226', 'node4': '28.722', 'node5': -16.786516363636363, 'node6': '51.486', 'node7': '83.492', 'node8': '41.733'}
+2024-03-25 18:28:49.829 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_7
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The argument is flawed and lacks sufficient evidence or logical reasoning to support its claims. It fails to consider important factors and alternative perspectives, leading to an unreliable conclusion.'}]
+本轮节点的oppose论述是：Support the argument.
+本轮节点的原始论证分数是39.979
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0]
+ [ 0  0  0  0  0  0 -1  0  0]]
+当前各节点检证分数为：{'node1': 72.6994909090909, 'node2': 47.702981818181826, 'node3': '36.226', 'node4': '28.722', 'node5': -14.991370909090909, 'node6': '51.486', 'node7': 80.2009, 'node8': '41.733', 'node9': '39.979'}
+2024-03-25 18:28:55.852 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：10
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001E9402ABB20>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'The decision to ban guns in America is a highly complex and controversial issue that involves considerations of constitutional rights, public safety, and personal freedoms. As an artificial intelligence, I do not have personal opinions. The topic of gun control is multifaceted and requires in-depth analysis of various factors before arriving at a conclusion.'}]
+本轮节点的oppose论述是：Oppose the content.
+本轮节点的原始论证分数是36.226
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0  0]
+ [ 0  0  0  0  0  0 -1  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]]
+当前各节点检证分数为：{'node1': 66.88102690909089, 'node2': 47.702981818181826, 'node3': '36.226', 'node4': '28.722', 'node5': -14.991370909090909, 'node6': '51.486', 'node7': 80.2009, 'node8': '41.733', 'node9': '39.979', 'node10': '36.226'}

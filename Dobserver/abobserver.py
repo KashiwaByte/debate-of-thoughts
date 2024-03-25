@@ -124,18 +124,30 @@ class AbObserver(ABC):
         
     def update_validation_score(self):
         '''获取当前各节点的检证后分数，返回一个字典'''
-        # θ δ β 是学习参数，θ是影响系数(0<α<1)，δ是深度系数(0<δ<1)受深度影响，β是检证系数（β>1)
-        self.valscoredict = self.scoredict
-        for i in reversed(range(1,self.round+1)):
-            θ = 0.5 
-            δ = 10/(9 + self.nodelist[i-1]["depth"])
-            β = 1.5
-            target_id = self.nodelist[i-1]['target'].round_id
-            target_score = self.valscoredict[f"node{target_id}"]
-            score = self.valscoredict[f"node{i}"]
-            target_val_score = (target_score-θ*δ*score)*β
-            self.valscoredict.update({f"node{target_id}":target_val_score}) 
-        pass
+        # θ δ β λ是学习参数，θ是影响系数(0<α<1)，δ是深度系数(0<δ<1)受深度影响，β是检证系数（β>1)，λ是修正系数(0<γ<1)
+        self.valscoredict = dict(self.scoredict)
+        if self.round == 1:
+            pass
+        elif self.round > 1:
+            for i in reversed(range(2,self.round+1)):
+                θ = 0.5
+                δ = 10/(9 + self.nodelist[i-1]["depth"])
+                β = 1.2
+                λ = 0.8
+                standpoint = self.nodelist[i-1]["standpoint"]
+                target_id = self.nodelist[i-1]["target"].round_id
+                target_score = float(self.valscoredict[f"node{target_id}"])
+                score = float(self.valscoredict[f"node{i}"])
+             # 如果小于论证小于30分应该直接dropout
+                if score>=30: 
+                    if standpoint == -1:
+                        target_val_score = (target_score+standpoint*θ*δ*score)*β
+                    elif standpoint == 1:
+                        target_val_score = (target_score+standpoint*θ*δ*score)*λ
+                    self.valscoredict.update({f"node{target_id}":target_val_score}) 
+                else:
+                    pass
+       
     
     def update_influence(self):
         '''获取当前各节点的影响力，返回一个字典'''
