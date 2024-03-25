@@ -1,0 +1,143 @@
+2024-03-25 18:30:40.196 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点关于主题China should implement personal bankruptcy system的论述是：Implementing a personal bankruptcy system in China could provide individuals with a legal mechanism to alleviate overwhelming debt and make a fresh financial start. This system could help individuals manage financial hardships more effectively, promote entrepreneurship by reducing the fear of failure, and contribute to the overall stability of the economy by addressing insolvency issues in a structured manner.
+本轮节点的原始论证分数是103.781
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '103.781'}
+2024-03-25 18:30:46.196 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 support node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Implementing a personal bankruptcy system in China could provide individuals with a legal mechanism to alleviate overwhelming debt and make a fresh financial start. This system could help individuals manage financial hardships more effectively, promote entrepreneurship by reducing the fear of failure, and contribute to the overall stability of the economy by addressing insolvency issues in a structured manner.'}]
+本轮节点的support论述是：Support the statement.
+本轮节点的原始论证分数是35.917
+当前的关系矩阵为：
+[[0 0]
+ [1 0]]
+当前各节点检证分数为：{'node1': 97.39160000000001, 'node2': '35.917'}
+2024-03-25 18:30:52.241 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：3
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 support node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the statement.'}]
+本轮节点的support论述是：Sure! I am here to support the statement.
+本轮节点的原始论证分数是29.527
+当前的关系矩阵为：
+[[0 0 0]
+ [1 0 0]
+ [0 1 0]]
+当前各节点检证分数为：{'node1': 97.39160000000001, 'node2': '35.917', 'node3': '29.527'}
+2024-03-25 18:30:58.260 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：4
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 oppose node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Implementing a personal bankruptcy system in China could provide individuals with a legal mechanism to alleviate overwhelming debt and make a fresh financial start. This system could help individuals manage financial hardships more effectively, promote entrepreneurship by reducing the fear of failure, and contribute to the overall stability of the economy by addressing insolvency issues in a structured manner.'}]
+本轮节点的oppose论述是：Oppose the argument.
+本轮节点的原始论证分数是39.637
+当前的关系矩阵为：
+[[ 0  0  0  0]
+ [ 1  0  0  0]
+ [ 0  1  0  0]
+ [-1  0  0  0]]
+当前各节点检证分数为：{'node1': 94.97080000000001, 'node2': '35.917', 'node3': '29.527', 'node4': '39.637'}
+2024-03-25 18:31:04.298 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：5
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 oppose node_2
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Support the statement.'}]
+本轮节点的oppose论述是：I support the statement. If you could please provide me with the content of the statement you would like me to support, I'd be happy to provide arguments in favor of it.
+本轮节点的原始论证分数是60.111
+当前的关系矩阵为：
+[[ 0  0  0  0  0]
+ [ 1  0  0  0  0]
+ [ 0  1  0  0  0]
+ [-1  0  0  0  0]
+ [ 0 -1  0  0  0]]
+当前各节点检证分数为：{'node1': 100.75500000000001, 'node2': 10.312581818181823, 'node3': '29.527', 'node4': '39.637', 'node5': '60.111'}
+2024-03-25 18:31:10.319 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：6
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 oppose node_5
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': "I support the statement. If you could please provide me with the content of the statement you would like me to support, I'd be happy to provide arguments in favor of it."}]
+本轮节点的oppose论述是：Oppose the statement.
+本轮节点的原始论证分数是37.145
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0]
+ [ 1  0  0  0  0  0]
+ [ 0  1  0  0  0  0]
+ [-1  0  0  0  0  0]
+ [ 0 -1  0  0  0  0]
+ [ 0  0  0  0 -1  0]]
+当前各节点检证分数为：{'node1': 100.75500000000001, 'node2': 13.885472727272733, 'node3': '29.527', 'node4': '39.637', 'node5': 53.5607, 'node6': '37.145'}
+2024-03-25 18:31:16.350 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：7
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 oppose node_4
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the argument.'}]
+本轮节点的oppose论述是：Sure, could you please provide me with the argument you would like me to oppose?
+本轮节点的原始论证分数是37.988
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0]
+ [-1  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0]
+ [ 0  0  0 -1  0  0  0]]
+当前各节点检证分数为：{'node1': '103.781', 'node2': 13.885472727272733, 'node3': '29.527', 'node4': 26.84367272727273, 'node5': 53.5607, 'node6': '37.145', 'node7': '37.988'}
+2024-03-25 18:31:22.379 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：8
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 support node_4
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Oppose the argument.'}]
+本轮节点的support论述是：I believe that the argument presented is not valid and lacks sufficient evidence to support its claims.
+本轮节点的原始论证分数是73.335
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0]
+ [ 0  0  0 -1  0  0  0  0]
+ [ 0  0  0  1  0  0  0  0]]
+当前各节点检证分数为：{'node1': 94.938288, 'node2': 13.885472727272733, 'node3': '29.527', 'node4': 49.33152, 'node5': 53.5607, 'node6': '37.145', 'node7': '37.988', 'node8': '73.335'}
+2024-03-25 18:31:28.409 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：9
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 oppose node_7
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly oppose the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Sure, could you please provide me with the argument you would like me to oppose?'}]
+本轮节点的oppose论述是：The argument you need to oppose is: "Social media platforms have had a positive impact on society by enhancing communication and connecting people all over the world."
+本轮节点的原始论证分数是72.934
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0]
+ [ 0  0  0 -1  0  0  0  0  0]
+ [ 0  0  0  1  0  0  0  0  0]
+ [ 0  0  0  0  0  0 -1  0  0]]
+当前各节点检证分数为：{'node1': 89.51107636363638, 'node2': 13.885472727272733, 'node3': '29.527', 'node4': 58.376872727272726, 'node5': 53.5607, 'node6': '37.145', 'node7': 9.118599999999997, 'node8': '73.335', 'node9': '72.934'}
+2024-03-25 18:31:34.420 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：10
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x000001CA6A1A5780>
+本轮节点 support node_7
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Sure, could you please provide me with the argument you would like me to oppose?'}]
+本轮节点的support论述是：I want you to oppose the statement "Social media has a positive impact on society."
+本轮节点的原始论证分数是44.723
+当前的关系矩阵为：
+[[ 0  0  0  0  0  0  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0]
+ [-1  0  0  0  0  0  0  0  0  0]
+ [ 0 -1  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0 -1  0  0  0  0  0]
+ [ 0  0  0 -1  0  0  0  0  0  0]
+ [ 0  0  0  1  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0 -1  0  0  0]
+ [ 0  0  0  0  0  0  1  0  0  0]]
+当前各节点检证分数为：{'node1': 89.51107636363638, 'node2': 13.885472727272733, 'node3': '29.527', 'node4': 58.376872727272726, 'node5': 53.5607, 'node6': '37.145', 'node7': 17.890680000000003, 'node8': '73.335', 'node9': '72.934', 'node10': '44.723'}
