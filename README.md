@@ -10,7 +10,7 @@
 - [ ] 策略模块(Agent或者机器学习方法实现)
 
 ### Debater
-- [ ] 集成Langchain Agent
+- [X] 集成Langchain Agent
 - [ ] 集成MetaGPT的单Agent
 - [ ] 集成RAG Debater
 - [ ] 集成Search Debater
@@ -31,6 +31,9 @@
 - Observer：负责记录和更新全局信息，包括全局的消息信息，节点的关系（矩阵），节点的分数（字典），节点的影响力（字典）。
 - Judge：负责下一个轮次选择什么辩手，下个轮次针对哪个Node，是选择支持还是反对,并且给每一轮生成的答案进行评分。
 - Graph：负责上传Observer中的node数据到图数据库neo4j中，并实现后续的分析
+- Research：非功能模块，技术选型的开发前测试
+- Test：非功能模块，技术实现的开发后验证测试
+
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240323101420.png)
 
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240318215900.png)
