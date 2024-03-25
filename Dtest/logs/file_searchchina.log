@@ -1,0 +1,27 @@
+2024-03-25 20:27:19.174 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.Dlangchain.searchchain.SearchChain object at 0x000002ABD1BCA9E0>
+本轮节点关于主题Who lived longer: Plato, Socrates, or Aristotle?的论述是：Plato
+本轮节点的原始论证分数是46.125
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '46.125'}
+2024-03-25 21:39:59.655 | INFO     | Dobserver.abobserver:log:63 - 
+当前轮次为：1
+本轮节点使用的Debater为：<Debater.Dlangchain.searchchain.SearchChain object at 0x0000016F71834550>
+本轮节点关于主题Who lived longer: Plato, Socrates, or Aristotle?的论述是：Plato
+本轮节点的原始论证分数是46.125
+当前的关系矩阵为：
+[0]
+当前各节点检证分数为：{'node1': '46.125'}
+2024-03-25 21:42:40.655 | INFO     | Dobserver.abobserver:log:73 - 
+当前轮次为：2
+本轮节点使用的Debater为：<Debater.d_openai.D_Openai object at 0x0000016F71858580>
+本轮节点 support node_1
+本轮节点的上文是：[{'role': 'system', 'content': 'You are a debater with a clear point of view. You need to choose to clearly support the following content according to the commands you receive. It is worth noting that if you support an opposing argument, your position is also opposed to the original argument, and if you oppose an opposing argument, then Your position should change to support the original argument'}, {'role': 'user', 'content': 'Plato'}]
+本轮节点的support论述是：Argue in favor of Plato.
+本轮节点的原始论证分数是43.921
+当前的关系矩阵为：
+[[0 0]
+ [1 0]]
+当前各节点检证分数为：{'node1': 54.4684, 'node2': '43.921'}

@@ -15,7 +15,7 @@ from typing import List
 
 class AbDebater(ABC):
     
-    def __init__(self,model:str,):
+    def __init__(self,model:str):
         self.model = model
         pass
     

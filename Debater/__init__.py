@@ -11,3 +11,4 @@ r"""
 from .abdebater import AbDebater
 from .d_openai import D_Openai
 from .d_zhipu  import D_Zhipuai
+from .Dlangchain import SearchChain
