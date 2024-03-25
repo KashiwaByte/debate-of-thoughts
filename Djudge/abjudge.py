@@ -38,18 +38,19 @@ class AbJudge(ABC):
         new_standpoint = self.get_standpoint()                 #后续根据算法得出
         
         node  = NormNode(round=new_round, out_node=new_outnode, debater=new_debater , standpoint=new_standpoint,language=self.language)
-        node.point = self.get_point(node)
+        node.score = self.get_score(node)
         return node
         
     
     
-    def get_point(self,node:AbNode):
+    def get_score(self,node:AbNode):
         """新节点获取分数的方法"""
         topic = node.topic
         sentence = node.content
         sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
         scores = self.argument_quality_client.run(sentence_topic_dict)
-        return scores
+        score = format(scores[0]*100, '.3f')
+        return score
         
     
     
