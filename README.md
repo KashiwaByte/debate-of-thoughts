@@ -6,21 +6,22 @@
 基础性的框架搭建与最小闭环已经实现了，接下来中需要对每个模块进行一定的优化，重要性排行如下：
 
 ### Judege
-评分模块和策略模块需要用Agent或者机器学习方法实现
+- [x] 评分模块(Agent或者机器学习方法实现)
+- [ ] 策略模块(Agent或者机器学习方法实现)
 
 ### Debater
-- 集成Langchain Agent
-- 集成MetaGPT的单Agent
-- 集成RAG Debater
-- 集成Search Debater
+- [ ] 集成Langchain Agent
+- [ ] 集成MetaGPT的单Agent
+- [ ] 集成RAG Debater
+- [ ] 集成Search Debater
 
 
 ### Node
-- 思考一下汇总Node
-- 优化提示词
+- [ ] 思考一下汇总Node
+- [ ] 优化提示词
 
 ### Graph
-思考一下能在Neo4j中实现怎么样的再利用
+- [ ] 思考一下在Neo4j中的推理
 
 ## 模块介绍
 目前分为以下几个大的模块:
