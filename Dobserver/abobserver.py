@@ -38,6 +38,7 @@ class AbObserver(ABC):
         self.debaterlist = list()
         self.depthdict = dict()
         self.scoredict = dict()
+        self.valscoredict = dict()
         self.influencedict = dict()
         self.debaterdict = dict()
         logger.add(f"logs/file_{self.name}.log", encoding="utf-8")
@@ -65,7 +66,7 @@ class AbObserver(ABC):
                     f'\n本轮节点关于主题{self.node.topic}的论述是：{self.node.content}'
                     f'\n本轮节点的原始论证分数是{self.node.score}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
-                    f'\n当前各节点分数为：{self.scoredict}'
+                    f'\n当前各节点检证分数为：{self.valscoredict}'
                 # f'\n当前各节点影响力为：{self.influence}'
                     )
         if self.round >1:
@@ -77,10 +78,10 @@ class AbObserver(ABC):
                     f'\n本轮节点的{self.node.stand}论述是：{self.node.content}'
                     f'\n本轮节点的原始论证分数是{self.node.score}'
                     f'\n当前的关系矩阵为：\n{self.relation}'
-                    f'\n当前各节点分数为：{self.scoredict}'
+                    f'\n当前各节点检证分数为：{self.valscoredict}'
                 # f'\n当前各节点影响力为：{self.influence}'
                     )
-        pass
+        
     
     
     def update(self):
@@ -88,6 +89,7 @@ class AbObserver(ABC):
         self.update_debater()
         self.update_depth()
         self.update_score()
+        self.update_validation_score()
         self.log()
         self.update_round()
     
@@ -120,8 +122,20 @@ class AbObserver(ABC):
         '''获取当前各节点的原始分数，返回一个字典'''
         self.scoredict.update({f"node{self.round}":self.node.score})
         
-    def update_verification_score(self):
+    def update_validation_score(self):
         '''获取当前各节点的检证后分数，返回一个字典'''
+        # θ δ β 是学习参数，θ是影响系数(0<α<1)，δ是深度系数(0<δ<1)受深度影响，β是检证系数（β>1)
+        self.valscoredict = self.scoredict
+        for i in reversed(range(1,self.round+1)):
+            θ = 0.5 
+            δ = 10/(9 + self.nodelist[i-1]["depth"])
+            β = 1.5
+            target_id = self.nodelist[i-1]['target'].round_id
+            target_score = self.valscoredict[f"node{target_id}"]
+            score = self.valscoredict[f"node{i}"]
+            target_val_score = (target_score-θ*δ*score)*β
+            self.valscoredict.update({f"node{target_id}":target_val_score}) 
+        pass
     
     def update_influence(self):
         '''获取当前各节点的影响力，返回一个字典'''
