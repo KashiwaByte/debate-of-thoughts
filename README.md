@@ -6,11 +6,11 @@
 基础性的框架搭建与最小闭环已经实现了，接下来中需要对每个模块进行一定的优化，重要性排行如下：
 
 ### Judege
-- [x] 评分模块(Agent或者机器学习方法实现)
+- [x] 评分模块(Agent或者机器学习方法实现,初步通过微调大模型实现)
 - [ ] 策略模块(Agent或者机器学习方法实现)
 
 ### Debater
-- [ ] 集成Langchain Agent
+- [x] 集成Langchain Agent
 - [ ] 集成MetaGPT的单Agent
 - [ ] 集成RAG Debater
 - [x] 集成Search Debater
@@ -50,7 +50,7 @@
 
 ## 问题与展望
 
-目前已经实现调用Project Debater 实现论证分数获取（但是实际效果上中文的分数估计很有问题，基本拉不开差距）
+目前通过调用Project Debater实现论证分数获取
 
 
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324160845.png)
@@ -64,6 +64,10 @@
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240324163506.png)
 
 
+为优化中文论证评分效果，微调了开源大模型LLAMA2-7B,OpenAI-3.5-turbo以及讯飞星火3.0模型，微调数据集与方法与评测在[Argument_Quality_Dataset](https://github.com/KashiwaByte/ArgsDataset)库中。
 
+综合测试下来讯飞3.0的中文效果非常不错，远超Project Debater的水平，在英文方面也能基本持平。不过讯飞3.0存在8%左右的敏感性问题。
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240401202412.png)
 
+![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240401202343.png)
 

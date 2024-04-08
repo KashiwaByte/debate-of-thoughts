@@ -20,6 +20,6 @@ class D_Human(AbDebater):
         pass
     
     def invoke(self,message):
-        answer = input(message)
+        answer = input(f'{message} 请输入你的答案：')
         return answer
         
