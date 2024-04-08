@@ -10,6 +10,7 @@
 - [ ] 策略模块(Agent或者机器学习方法实现)
 
 ### Debater
+- [ ] 细粒度的问答，比如针对特定角度，同时要有细粒度的论证支撑。
 - [x] 集成Langchain Agent
 - [ ] 集成MetaGPT的单Agent
 - [ ] 集成RAG Debater
