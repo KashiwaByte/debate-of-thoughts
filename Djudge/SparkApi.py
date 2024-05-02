@@ -105,7 +105,7 @@ def gen_params(appid, domain,question):
         "header": {
             "app_id": appid,
             "uid": "1234",
-            "patch_id": ["1773679582759010304"] #调用微调大模型时必传, 否则不传。对应resourceId  星火微调0329
+            "patch_id": ["1775164063584563200"] #调用微调大模型时必传, 否则不传。对应resourceId  星火微调0402
             # "patch_id": ["1773328169688285184"]   #星火微调0328
         },
         "parameter": {
@@ -126,9 +126,9 @@ def gen_params(appid, domain,question):
 
 def main(question):
     
-    appid = "51bb5f32"     #填写控制台中获取的 APPID 信息
-    api_secret = "ZDA5MDZjZWY0YzE5NmY3MWNjNTQ4YWMz"   #填写控制台中获取的 APISecret 信息
-    api_key ="bfd094c6b2feb6dbf9bfe3bba6954f76"    #填写控制台中获取的 APIKey 信息
+    appid = "276da45d"     #填写控制台中获取的 APPID 信息
+    api_secret = "YjYzZDE1YWRhNDc5Mzc2MDE3OGExNTI0"   #填写控制台中获取的 APISecret 信息
+    api_key ="f9748595355392513b9785cb5a584db1"    #填写控制台中获取的 APIKey 信息
 
     #调用微调大模型时，设置为“patch”
     domain = "patchv3"
