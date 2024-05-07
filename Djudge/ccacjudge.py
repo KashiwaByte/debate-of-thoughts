@@ -14,7 +14,7 @@ relative_path = os.path.join(current_dir, '..')
 sys.path.append(relative_path)
 from abjudge import AbJudge
 from Debater import D_Openai
-from Dnode import AbNode,InitNode,NormNode,CCACNode
+from Dnode import AbNode,CCACNode
 from Dobserver import AbObserver
 import SparkApi
 
@@ -24,16 +24,13 @@ class CCACJudge(AbJudge):
     def __init__(self,observer:AbObserver,language:str = 'zh'):
         self.observer = observer
         self.language = language
-        # debater_api = DebaterApi(debaterapi)
-        # self.argument_quality_client = debater_api.get_argument_quality_client()
+
         
     
     
     def new_node(self):
         new_round = self.observer.round
-        new_outnode = self.get_outnode()       #后续根据算法得出
         new_debater = self.get_debater()  #后续根据算法得出
-        new_standpoint = self.get_standpoint()                 #后续根据算法得出
         
         node  = CCACNode(round=new_round, debater=new_debater , language=self.language)
         node.score = self.get_score(node)
@@ -77,7 +74,3 @@ class CCACJudge(AbJudge):
             return self.observer.debaterlist[0]["debater"]
         if i%2 == 0:
             return self.observer.debaterlist[1]["debater"]
-        
-    def get_standpoint(self):
-        """新节点获取论述意向的方法"""
-        return -1
