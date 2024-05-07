@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 r"""
-@DATE: 2024-05-02 21:07:21
-@File: Debater\ccacbasedebater.py
+@DATE: 2024-05-07 19:35:26
+@File: Debater\ccacdebater.py
 @IDE: vscode
 @Description:
-    用于CCAC论辩评测的正方辩论Agent
+     用于CCAC论辩评测的反方可定制辩论Agent范例
 """
 from .abdebater import AbDebater
 from langchain_openai import ChatOpenAI
@@ -76,7 +76,7 @@ agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 Prompt1 = f"""
 你是一个资深辩手，你需要输出一篇立论稿，同时绝对不需要无关的内容
 接下来会给你一个题目和持方。
-///题目是{topic}，你的持方是正方///
+///题目是{topic}，你的持方是反方///
 立论稿有以下要求：
 1.以一个专业辩手的口吻做开场白。
 2.总字数为1200字。
@@ -90,7 +90,7 @@ Prompt1 = f"""
 EN_Prompt1 = f"""
 You are a senior debater. You need to output a draft of your argument, and there is absolutely no need for irrelevant content.
 Next, you will be given a question and instructions.
-///The title is {topic}, your holding square is square///
+///The topic is {topic}, and your position is negative///
 Thesis draft has the following requirements:
 1. Make an opening statement in the tone of a professional debater.
 2. The total word count is 1,200 words.
@@ -103,15 +103,15 @@ Thesis draft has the following requirements:
 
 
 
-Prompt2 = f"""你是一个资深的逻辑性很强的顶级辩手，你很擅长质询,总是一针见血，而且也很擅长使用类比来归谬我的观点，你熟练的掌握各种数据攻防的技巧，请根据对方的立论内容进行反驳，你可以调用search工具获取反驳论据，以下是对方的立论稿{text}"""
+Prompt2 = f"""你是一个资深的逻辑性很强的顶级辩手，你很擅长质询,总是一针见血，而且也很擅长使用类比来归谬对方的观点，你熟练的掌握各种数据攻防的技巧，请根据对方的立论内容进行反驳，你可以调用search工具获取反驳论据，以下是对方的立论稿{text}"""
 
-EN_Prompt2 = f"""You are a senior and top debater with strong logic. You are very good at questioning and always hit the nail on the head. You are also very good at using analogies to reduce my point of view. You are proficient in various data attack and defense techniques. You can call the search tool to get rebuttal arguments,Please Refute based on the content of the other party's argument. The following is the opponent's argument {text}"""
+EN_Prompt2 = f"""You are a senior and top debater with strong logic. You are very good at questioning and always hit the nail on the head. You are also very good at using analogies to deduce the other party's point of view. You are proficient in various data attack and defense techniques. Please To refute based on the content of the other party's argument, you can use the search tool to obtain the rebuttal arguments. The following is the opponent's argument draft {text}"""
 
 
 
-Prompt3 = f"""你是一个资深的逻辑性很强的顶级结辩手，你擅长归纳总结，请站在正方的立场根据双方之前的立论和质询环节输出一个结辩稿"""
+Prompt3 = f"""你是一个资深的逻辑性很强的顶级结辩手，你擅长归纳总结，请站在反方的立场根据双方之前的立论和质询环节输出一个结辩稿"""
 
-EN_Prompt3 = f"""You are a senior and top-notch debater with strong logic. You are good at summarizing. Please stand on the Positive side and output a closing draft based on the previous arguments and questioning sessions of both parties."""
+EN_Prompt3 = f"""You are a senior and top-level final debater with strong logic. You are good at summarizing. Please stand on the opposite side and output a closing draft based on the previous arguments and questioning sessions of both parties."""
 
 
 class CCACDebater(AbDebater):
@@ -126,17 +126,17 @@ class CCACDebater(AbDebater):
         
     def invoke(self,message):
         if self.language == 'zh':
-            if self.round == 1:
+            if self.round == 2:
                 topic = message
                 completion = self.agent_executor.invoke({"input":Prompt1})
                 answer = completion["output"]
                 return answer
-            elif self.round == 3:
+            elif self.round == 4:
                 text = message
                 completion = self.agent_executor.invoke({"input":Prompt2})
                 answer = completion["output"]
                 return answer
-            elif self.round == 5:
+            elif self.round == 6:
                 completion = self.agent_executor.invoke({"input":Prompt3})
                 answer = completion["output"]
                 return answer
@@ -146,17 +146,17 @@ class CCACDebater(AbDebater):
         
         
         elif self.language == 'en':
-            if self.round == 1:
+            if self.round == 2:
                 topic = message
                 completion = self.agent_executor.invoke({"input":EN_Prompt1})
                 answer = completion["output"]
                 return answer
-            elif self.round == 3:
+            elif self.round == 4:
                 text = message
                 completion = self.agent_executor.invoke({"input":EN_Prompt2})
                 answer = completion["output"]
                 return answer
-            elif self.round == 5:
+            elif self.round == 6:
                 completion = self.agent_executor.invoke({"input":EN_Prompt3})
                 answer = completion["output"]
                 return answer
