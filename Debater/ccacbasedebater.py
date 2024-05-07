@@ -116,27 +116,26 @@ EN_Prompt3 = f"""You are a senior and top-notch debater with strong logic. You a
 
 class CCACDebater(AbDebater):
     
-    def __init__(self,round,language:str = 'zh'):
-        self.round = round
+    def __init__(self,language:str = 'zh'):
         self.agent_executor = agent_executor
         self.chat_history = chat_history
     
     def response(self):
         pass
         
-    def invoke(self,message):
+    def invoke(self,message,round):
         if self.language == 'zh':
-            if self.round == 1:
+            if round == 1:
                 topic = message
                 completion = self.agent_executor.invoke({"input":Prompt1})
                 answer = completion["output"]
                 return answer
-            elif self.round == 3:
+            elif round == 3:
                 text = message
                 completion = self.agent_executor.invoke({"input":Prompt2})
                 answer = completion["output"]
                 return answer
-            elif self.round == 5:
+            elif round == 5:
                 completion = self.agent_executor.invoke({"input":Prompt3})
                 answer = completion["output"]
                 return answer
@@ -146,17 +145,17 @@ class CCACDebater(AbDebater):
         
         
         elif self.language == 'en':
-            if self.round == 1:
+            if round == 1:
                 topic = message
                 completion = self.agent_executor.invoke({"input":EN_Prompt1})
                 answer = completion["output"]
                 return answer
-            elif self.round == 3:
+            elif round == 3:
                 text = message
                 completion = self.agent_executor.invoke({"input":EN_Prompt2})
                 answer = completion["output"]
                 return answer
-            elif self.round == 5:
+            elif round == 5:
                 completion = self.agent_executor.invoke({"input":EN_Prompt3})
                 answer = completion["output"]
                 return answer

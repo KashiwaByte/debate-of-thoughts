@@ -124,19 +124,19 @@ class CCACDebater(AbDebater):
     def response(self):
         pass
         
-    def invoke(self,message):
+    def invoke(self,message,round):
         if self.language == 'zh':
-            if self.round == 2:
+            if round == 2:
                 topic = message
                 completion = self.agent_executor.invoke({"input":Prompt1})
                 answer = completion["output"]
                 return answer
-            elif self.round == 4:
+            elif round == 4:
                 text = message
                 completion = self.agent_executor.invoke({"input":Prompt2})
                 answer = completion["output"]
                 return answer
-            elif self.round == 6:
+            elif round == 6:
                 completion = self.agent_executor.invoke({"input":Prompt3})
                 answer = completion["output"]
                 return answer
@@ -146,17 +146,17 @@ class CCACDebater(AbDebater):
         
         
         elif self.language == 'en':
-            if self.round == 2:
+            if round == 2:
                 topic = message
                 completion = self.agent_executor.invoke({"input":EN_Prompt1})
                 answer = completion["output"]
                 return answer
-            elif self.round == 4:
+            elif round == 4:
                 text = message
                 completion = self.agent_executor.invoke({"input":EN_Prompt2})
                 answer = completion["output"]
                 return answer
-            elif self.round == 6:
+            elif round == 6:
                 completion = self.agent_executor.invoke({"input":EN_Prompt3})
                 answer = completion["output"]
                 return answer

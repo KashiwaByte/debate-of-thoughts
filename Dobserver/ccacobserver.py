@@ -23,7 +23,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 relative_path = os.path.join(current_dir, '..')
 # 将相对路径添加到sys.path
 sys.path.append(relative_path)
-from Dnode import AbNode,InitNode
+from Dnode import AbNode,InitNode,CCACNode
 from Debater import AbDebater
 
 
@@ -58,14 +58,11 @@ class AbObserver(ABC):
         """添加可用辩手到列表"""
         self.debaterlist.append({"describe":describe,"debater":debater})
     
-    def init_node(self,node:InitNode):
-        self.node = node
-        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"score":node.score,"depth":node.depth,"debater":node.debater,"content":node.content})
-    
+
     def update_node(self,node:AbNode):
         """更改当前记录的node,j字典形式记录当前node信息到列表中"""
         self.node = node
-        self.nodelist.append({"round_id":node.round_id,"node":node,"topic":node.topic,"score":node.score,"depth":node.depth,"debater":node.debater,"standpoint":node.standpoint,"stand":node.stand,"target":node.target,"content":node.content})
+        self.nodelist.append({"round_id":node.round_id,"node":node,"score":node.score,"target":node.target,"content":node.content})
         
     
     def log(self):

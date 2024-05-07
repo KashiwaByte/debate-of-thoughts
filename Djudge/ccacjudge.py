@@ -14,7 +14,7 @@ relative_path = os.path.join(current_dir, '..')
 sys.path.append(relative_path)
 from abjudge import AbJudge
 from Debater import D_Openai
-from Dnode import AbNode,InitNode,NormNode
+from Dnode import AbNode,InitNode,NormNode,CCACNode
 from Dobserver import AbObserver
 import SparkApi
 
@@ -35,7 +35,7 @@ class CCACJudge(AbJudge):
         new_debater = self.get_debater()  #后续根据算法得出
         new_standpoint = self.get_standpoint()                 #后续根据算法得出
         
-        node  = NormNode(round=new_round, out_node=new_outnode, debater=new_debater , standpoint=new_standpoint,language=self.language)
+        node  = CCACNode(round=new_round, debater=new_debater , language=self.language)
         node.score = self.get_score(node)
         return node
         

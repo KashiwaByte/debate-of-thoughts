@@ -14,7 +14,7 @@ class CCACNode(AbNode):
     
     
     def __init__(self,round:int,debater,language:str = "zh"):
-        self.round_id = round
+        self.round = round
         self.debater=debater
         self.language = language
         self.get_topic()
@@ -55,7 +55,7 @@ class CCACNode(AbNode):
                               ]
         message_template[1]['content'] = self.target.content
         self.context = message_template
-        answer = self.debater.invoke(message_template)
+        answer = self.debater.invoke(message_template,self.round)
         self.content = answer
         pass
     
