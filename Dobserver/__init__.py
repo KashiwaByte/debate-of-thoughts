@@ -8,3 +8,4 @@ r"""
     Observer模块
 """
 from .abobserver import AbObserver
+from .ccacobserver import CCACObserver

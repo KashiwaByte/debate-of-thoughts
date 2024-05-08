@@ -27,7 +27,7 @@ from Dnode import AbNode,InitNode,CCACNode
 from Debater import AbDebater
 
 
-class AbObserver(ABC):
+class CCACObserver(ABC):
     
     def __init__(self,name:str ,max_round:int = 6 ):
         self.round = 1 
