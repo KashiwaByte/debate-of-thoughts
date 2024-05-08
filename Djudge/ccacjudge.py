@@ -21,18 +21,19 @@ import SparkApi
 class CCACJudge(AbJudge):
     """用于CCAC测评,主要针对得分和流程进行定制"""
     
-    def __init__(self,observer:AbObserver,language:str = 'zh'):
+    def __init__(self,topic,observer:AbObserver,language:str = 'zh'):
+        self.topic = topic
         self.observer = observer
         self.language = language
 
         
     
     
-    def new_node(self):
+    def new_node(self,context):
         new_round = self.observer.round
         new_debater = self.get_debater()  #后续根据算法得出
         
-        node  = CCACNode(round=new_round, debater=new_debater , language=self.language)
+        node  = CCACNode(round=new_round,debater=new_debater,topic=self.topic,context=context,language=self.language)
         node.score = self.get_score(node)
         return node
         

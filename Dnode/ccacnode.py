@@ -13,11 +13,12 @@ from Debater import CCACDebater
 class CCACNode(AbNode):
     
     
-    def __init__(self,round:int,debater,language:str = "zh"):
+    def __init__(self,round:int,debater,topic,context,language:str = "zh"):
         self.round = round
         self.debater=debater
+        self.topic = topic
+        self.context = context
         self.language = language
-        self.get_topic()
         self.get_content()
         pass
     
@@ -37,38 +38,35 @@ class CCACNode(AbNode):
             self.round_name = "反方结辩"
 
     
-    def get_topic(self):
-        return super().get_topic()
-    
         
     
     def get_content(self):
         if self.language == "zh":
             if self.round == 1:
-                message = "正方立论"
+                message = self.topic
             elif self.round == 2:
-                message = "反方立论"
+                message = self.topic
             elif self.round == 3:
-                message = "正方驳论"
+                message = self.context
             elif self.round == 4:
-                message = "反方驳论"
+                message = self.context
             elif self.round == 5:
-                message = "正方结辩"
+                message = self.context
             elif self.round == 6:
-                message = "反方结辩"
+                message = self.context
         elif self.language == "en":
             if self.round == 1:
-                message = "正方立论"
+                message = self.topic
             elif self.round == 2:
-                message = "反方立论"
+                message = self.topic
             elif self.round == 3:
-                message = "正方驳论"
+                message = self.context
             elif self.round == 4:
-                message = "反方驳论"
+                message = self.context
             elif self.round == 5:
-                message = "正方结辩"
+                message = self.context
             elif self.round == 6:
-                message = "反方结辩"
+                message = self.context
         answer = self.debater.invoke(message,self.round)
         self.content = answer
     
