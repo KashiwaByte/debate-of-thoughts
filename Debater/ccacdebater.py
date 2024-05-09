@@ -27,7 +27,7 @@ llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
 chat_history = []
 
-search = SerpAPIWrapper(serpapi_api_key = '<Put Your API Here>')
+search = SerpAPIWrapper(serpapi_api_key = 'fe7e2de72185aa0cc1595f5eb784daac2a3497fe405c668efa612e78cbfaff13')
 
 tools = [
             Tool(
@@ -75,10 +75,10 @@ agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 # topic在立论环节为双方立论的辩题，context在驳论环节为对方的立论稿，在结辩环节为全场比赛的内容
 class CCACDebater(AbDebater):
     
-    def __init__(self,round,language:str = 'zh'):
-        self.round = round
+    def __init__(self,language:str = 'zh'):
         self.agent_executor = agent_executor
         self.chat_history = chat_history
+        self.language = language
     
     def response(self):
         pass

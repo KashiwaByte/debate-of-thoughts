@@ -12,11 +12,10 @@ import sys
 current_dir = os.path.dirname(os.path.abspath(__file__))
 relative_path = os.path.join(current_dir, '..')
 sys.path.append(relative_path)
-from abjudge import AbJudge
-from Debater import D_Openai
+from Djudge import AbJudge
 from Dnode import AbNode,CCACNode
 from Dobserver import AbObserver
-import SparkApi
+from Djudge import SparkApi
 
 class CCACJudge(AbJudge):
     """用于CCAC测评,主要针对得分和流程进行定制"""
@@ -54,7 +53,7 @@ class CCACJudge(AbJudge):
         elif self.language=="en":
             sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
             scores = self.argument_quality_client.run(sentence_topic_dict)
-        score = format(scores[0]*100, '.3f')
+        score = format(float(scores[0])*100, '.3f')
         return score
         
     
@@ -75,3 +74,7 @@ class CCACJudge(AbJudge):
             return self.observer.debaterlist[0]["debater"]
         if i%2 == 0:
             return self.observer.debaterlist[1]["debater"]
+
+
+if __name__ == "__main__":
+    print("1")

@@ -8,10 +8,6 @@ r"""
     用于CCAC智慧论辩测评的Observer类
 """
 from __future__ import annotations
-from abc import ABC, abstractmethod
-from random import randrange
-from typing import List
-import numpy as np
 from loguru import logger
 
 
@@ -25,9 +21,10 @@ relative_path = os.path.join(current_dir, '..')
 sys.path.append(relative_path)
 from Dnode import AbNode,InitNode,CCACNode
 from Debater import AbDebater
+from Dobserver import AbObserver
 
 
-class CCACObserver(ABC):
+class CCACObserver(AbObserver):
     
     def __init__(self,name:str ,max_round:int = 6 ):
         self.round = 1 
@@ -62,7 +59,7 @@ class CCACObserver(ABC):
     def update_node(self,node:AbNode):
         """更改当前记录的node,j字典形式记录当前node信息到列表中"""
         self.node = node
-        self.nodelist.append({"round_id":node.round_id,"node":node,"score":node.score,"content":node.content})
+        self.nodelist.append({"round":node.round,"node":node,"score":node.score,"content":node.content})
         
     
     def log(self):
@@ -85,6 +82,7 @@ class CCACObserver(ABC):
     
     
     def update(self):
+        self.get_round_name()
         self.update_debater()
         self.update_score()
         self.log()

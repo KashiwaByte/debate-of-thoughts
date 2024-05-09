@@ -20,7 +20,7 @@ from Debater import D_Openai
 from Dnode import AbNode,InitNode,NormNode
 from Dobserver import AbObserver
 import random
-import SparkApi
+from Djudge import SparkApi
 from debater_python_api.api.debater_api import DebaterApi
 class AbJudge(ABC):
     
@@ -81,3 +81,7 @@ class AbJudge(ABC):
     def get_standpoint(self):
         """新节点获取论述意向的方法"""
         return random.choice([-1,1])
+    
+
+if __name__ == "__main__":
+    print("1")
