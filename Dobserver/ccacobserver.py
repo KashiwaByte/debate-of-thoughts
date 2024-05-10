@@ -67,16 +67,16 @@ class CCACObserver(AbObserver):
         if self.round ==1:
             logger.info(
                     f'\n当前环节为：{self.round_name}'
-                    f'\n本环节使用的Debater为：{self.node.debater}'
+                    # f'\n本环节使用的Debater为：{self.node.debater}'
                     f'\n本环节的论述是：{self.node.content}'
-                    f'\n本环节的原始论证分数是{self.node.score}'
+                    # f'\n本环节的原始论证分数是{self.node.score}'
                     )
         if self.round >1:
             logger.info(
                     f'\n当前环节为：{self.round_name}'
-                    f'\n本环节使用的Debater为：{self.node.debater}'
+                    # f'\n本环节使用的Debater为：{self.node.debater}'
                     f'\n本环节的论述是：{self.node.content}'
-                    f'\n本环节的原始论证分数是{self.node.score}'
+                    # f'\n本环节的原始论证分数是{self.node.score}'
                     )
         
     
