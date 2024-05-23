@@ -7,7 +7,13 @@ r"""
 @Description:
     用于CCAC论辩评测的正方辩论Agent
 """
-from .abdebater import AbDebater
+import os
+import sys
+from dotenv import load_dotenv
+current_dir = os.path.dirname(os.path.abspath(__file__))
+relative_path = os.path.join(current_dir, '..')
+sys.path.append(relative_path)
+from Debater import AbDebater
 from langchain_openai import ChatOpenAI
 from langchain_community.utilities import SerpAPIWrapper
 from langchain_core.tools import Tool
@@ -20,12 +26,13 @@ from langchain.agents.output_parsers.openai_tools import OpenAIToolsAgentOutputP
 from langchain.agents import AgentExecutor
 from langchain_core.messages import AIMessage, HumanMessage
 
-
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # 以下是基础辩手Agent的构建
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-3.5-turbo",api_key=openai_api_key,temperature=0)
 
-search = SerpAPIWrapper()
+search = SerpAPIWrapper(serpapi_api_key = os.getenv("SERPAPI_API_KEY"))
 
 tools = [
             Tool(
@@ -86,8 +93,7 @@ class CCACBaseDebater(AbDebater):
                 topic = message
                 Prompt1 = f"""
                             你是一个资深辩手，你需要输出一篇立论稿，同时绝对不需要无关的内容
-                            接下来会给你一个题目和持方。
-                            ///题目是{topic}，你的持方是正方///
+                            题目是{topic}，你的持方是正方
                             立论稿有以下要求：
                             1.第一段需要包含以下三个部分 给出持方，对名词做出简单解释，给出标准，标准只能有一个。
                             2.第二段是第一个分论点，分论点需要围绕标准，阐述完论点后需要提出论据，最好是数据论据和学理论据，提出论据后需要做出解释来进行论证。参照以下流程：论点1+数据论据+数据论据的论证+学理论据+学理论据的论证。本段需要非常详细。
