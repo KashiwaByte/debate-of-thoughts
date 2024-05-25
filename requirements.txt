@@ -7,3 +7,5 @@ numpy==1.26.4
 openai==1.14.3
 py2neo==2021.2.4
 zhipuai==2.0.1
+python-dotenv
+google-search-results
