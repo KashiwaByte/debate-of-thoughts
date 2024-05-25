@@ -9,3 +9,4 @@ r"""
 """
 
 from .abjudge import AbJudge
+from .ccacjudge import CCACJudge

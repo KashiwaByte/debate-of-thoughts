@@ -20,6 +20,7 @@ from Debater import D_Openai
 from Dnode import AbNode,InitNode,NormNode
 from Dobserver import AbObserver
 import random
+from Djudge import SparkApi
 from debater_python_api.api.debater_api import DebaterApi
 class AbJudge(ABC):
     
@@ -47,8 +48,17 @@ class AbJudge(ABC):
         """新节点获取分数的方法"""
         topic = node.topic
         sentence = node.content
-        sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
-        scores = self.argument_quality_client.run(sentence_topic_dict)
+        if self.language=="zh":
+            text =[ {"role": "system",
+                     "content": "请根据以下论述和主题,给出论证质量评分(只需要输出一个范围从0-1的分数,精确到小数点后9位),不要给出分析."},
+                    { "role":"user",
+                      "content":str({'sentence':sentence , 'topic': topic})          
+                         }]
+            SparkApi.main(text)
+            scores = SparkApi.answer
+        elif self.language=="en":
+            sentence_topic_dict = [{'sentence':sentence,'topic':topic}]
+            scores = self.argument_quality_client.run(sentence_topic_dict)
         score = format(scores[0]*100, '.3f')
         return score
         
@@ -71,3 +81,7 @@ class AbJudge(ABC):
     def get_standpoint(self):
         """新节点获取论述意向的方法"""
         return random.choice([-1,1])
+    
+
+if __name__ == "__main__":
+    print("1")

@@ -9,7 +9,6 @@ r"""
 """
 
 from .abnode import AbNode
-from Debater import D_Openai
 class InitNode(AbNode):
     
     def __init__(self,topic,debater,language:str ='zh'):

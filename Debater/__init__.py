@@ -11,4 +11,8 @@ r"""
 from .abdebater import AbDebater
 from .d_openai import D_Openai
 from .d_zhipu  import D_Zhipuai
+from .d_human import D_Human
 from .Dlangchain import SearchChain
+from .ccacbasedebater import CCACBaseDebater
+from .ccacdebater import CCACDebater
+

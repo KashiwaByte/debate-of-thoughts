@@ -1,0 +1,9 @@
+debater_python_api==5.1.4
+langchain==0.1.13
+langchain_community==0.0.29
+langchain_openai==0.1.1
+loguru==0.7.2
+numpy==1.26.4
+openai==1.14.3
+py2neo==2021.2.4
+zhipuai==2.0.1
